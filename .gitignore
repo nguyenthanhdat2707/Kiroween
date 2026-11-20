@@ -1,0 +1,12 @@
+# Editor / vault config
+.obsidian/
+
+# Downloaded third-party pages and raw agent scratch data
+scratch/
+
+# OS / Python
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*

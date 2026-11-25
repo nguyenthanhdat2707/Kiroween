@@ -1,0 +1,709 @@
+{
+  "agent": "B",
+  "phase": "2B",
+  "model_observed": "claude-sonnet-5-5",
+  "effort_observed": "high",
+  "candidates": {
+    "A-P1": {
+      "scores": {
+        "demand": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "A-P1-C2 (split: VERIFIED numbers / INFERENCE overload)",
+            "A-P1-C3",
+            "B2-R09",
+            "B2-R46",
+            "B2-R12"
+          ]
+        },
+        "international": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "A·R05 Reuters DNR 2026 (48 markets)",
+            "B2-R12",
+            "B2-R09",
+            "A·R06"
+          ]
+        },
+        "innovation": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "B2-R09",
+            "B2-R46",
+            "B2-R11",
+            "B2-R12",
+            "A·R07",
+            "A·R08c"
+          ]
+        },
+        "theme": {
+          "score": 5,
+          "confidence": "H",
+          "evidence": [
+            "A-P1-C1",
+            "A·R02"
+          ]
+        },
+        "ai": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "A-P1 §6 (self-healing extractor, semantic predicate)"
+          ]
+        },
+        "feasibility": {
+          "score": 4,
+          "confidence": "H",
+          "evidence": [
+            "B2-R11",
+            "A·R08c"
+          ]
+        },
+        "demo": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "A-P1 §6"
+          ]
+        },
+        "sustainability": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "B2-R09",
+            "B2-R50",
+            "A·R08e"
+          ]
+        }
+      },
+      "theme_gate_pass": true,
+      "weighted_total": 63.0,
+      "changes": []
+    },
+    "A-P2": {
+      "scores": {
+        "demand": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "A-P2-C2 (split)",
+            "B2-R30",
+            "B2-R32",
+            "B2-R01"
+          ]
+        },
+        "international": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "B2-R30",
+            "B2-R32",
+            "B2-R01",
+            "B2-R31"
+          ]
+        },
+        "innovation": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "B2-R01",
+            "B2-R31",
+            "A·R12",
+            "A·R13"
+          ]
+        },
+        "theme": {
+          "score": 4,
+          "confidence": "H",
+          "evidence": [
+            "A-P2-C1",
+            "A·R09",
+            "A·R10",
+            "A·R11"
+          ]
+        },
+        "ai": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "A-P2 §6",
+            "B2-R01"
+          ]
+        },
+        "feasibility": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "A-P2 §6 (browser-extension slice)"
+          ]
+        },
+        "demo": {
+          "score": 5,
+          "confidence": "M",
+          "evidence": [
+            "A-P2 §6"
+          ]
+        },
+        "sustainability": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "B2-R30",
+            "B2-R32"
+          ]
+        }
+      },
+      "theme_gate_pass": true,
+      "weighted_total": 66.0,
+      "changes": []
+    },
+    "A-P4": {
+      "scores": {
+        "demand": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "A-P4-C1",
+            "A-P4-C2",
+            "B2-R33",
+            "B2-R34",
+            "B2-R35",
+            "A-P4-C3"
+          ]
+        },
+        "international": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "A-P4-C1 (global vendor EOL)",
+            "B2-R37",
+            "B2-R36",
+            "B2-R61",
+            "B2-R62",
+            "B2-R63",
+            "A-P4-C1"
+          ]
+        },
+        "innovation": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "A·R22",
+            "A·R23",
+            "A·R24",
+            "B2-R34"
+          ]
+        },
+        "theme": {
+          "score": 5,
+          "confidence": "H",
+          "evidence": [
+            "A-P4-C1",
+            "A·R19",
+            "A·R20",
+            "B2-R33"
+          ]
+        },
+        "ai": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "A-P4 §6 (semantic rot / hijack detection)"
+          ]
+        },
+        "feasibility": {
+          "score": 5,
+          "confidence": "M",
+          "evidence": [
+            "B2-R33 (export format)",
+            "B2-R35 (Wayback)"
+          ]
+        },
+        "demo": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "A-P4 §6"
+          ]
+        },
+        "sustainability": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "A·R22",
+            "B2-R34",
+            "A·R18"
+          ]
+        }
+      },
+      "theme_gate_pass": true,
+      "weighted_total": 72.0,
+      "changes": [
+        {
+          "criterion": "international",
+          "from": 3,
+          "to": 4,
+          "reason": "Opened direct cases in all three regions: Hatena (Japan) shipped a Pocket-to-Hatena-Bookmark migration tool (2025-05-30), Ottawa PC Users' Group (Canada) ran a 'Goodbye Pocket - Hello Instapaper' session (2025-07-30), wallabag publishes a Pocket migration guide; not 5 because of copyright barriers on sharing archived copies.",
+          "triggered_by": "C"
+        }
+      ]
+    },
+    "A-P7": {
+      "scores": {
+        "demand": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "A-P7-C1",
+            "A-P7-C2",
+            "A-P7-C3",
+            "B2-R38",
+            "B2-R39"
+          ]
+        },
+        "international": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "A·R40 (169 countries)",
+            "B2-R41",
+            "B2-R42",
+            "B2-R53",
+            "A-P7-C1",
+            "A·R40"
+          ]
+        },
+        "innovation": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "B2-R40",
+            "B2-R39",
+            "A-P7 §5",
+            "B2-R54",
+            "B2-R55"
+          ]
+        },
+        "theme": {
+          "score": 2,
+          "confidence": "H",
+          "evidence": [
+            "A-P7-C1",
+            "B2-R39",
+            "B2-R40"
+          ]
+        },
+        "ai": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "A-P7 §6 (test fail->pass oracle)"
+          ]
+        },
+        "feasibility": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "A-P7 §6"
+          ]
+        },
+        "demo": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "A-P7 §6"
+          ]
+        },
+        "sustainability": {
+          "score": 3,
+          "confidence": "L",
+          "evidence": [
+            "B2-R39",
+            "A-P7-C4 (UNKNOWN)"
+          ]
+        }
+      },
+      "theme_gate_pass": false,
+      "weighted_total": 57.0,
+      "changes": [
+        {
+          "criterion": "international",
+          "from": 3,
+          "to": 4,
+          "reason": "Reproduced Stack Exchange API counts myself: ja.stackoverflow 4 and ru.stackoverflow 36 questions in 10/2026 (vs 186 and 2,941 in 03/2022 per Agent A); the collapse is independently evidenced in NA, Europe and Asia; not 5 because NDA/IP barriers are global.",
+          "triggered_by": "A"
+        },
+        {
+          "criterion": "innovation",
+          "from": 3,
+          "to": 2,
+          "reason": "Opened Stack Overflow for Agents (2026-09-16): agents already share 'TIL' one-time fixes and Playbooks with trust scores, validation gateways, PII protections and optional human review; the remaining gap (test-backed fail->pass reproduction) is specific but close to a feature add-on.",
+          "triggered_by": "C"
+        }
+      ]
+    },
+    "B-P1": {
+      "scores": {
+        "demand": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "B-P1-C1",
+            "B-P1-C4",
+            "B2-R07",
+            "B2-R02",
+            "B2-R04",
+            "B2-R14",
+            "B2-R13",
+            "B2-R08",
+            "B2-R48"
+          ]
+        },
+        "international": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "B2-R13",
+            "B2-R14",
+            "B2-R02",
+            "B2-R16",
+            "B2-R15",
+            "B2-R49"
+          ]
+        },
+        "innovation": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "B·R01",
+            "B2-R08",
+            "B2-R04",
+            "B-P1-C4"
+          ]
+        },
+        "theme": {
+          "score": 5,
+          "confidence": "H",
+          "evidence": [
+            "B-P1-C1",
+            "B-P1-C2",
+            "B2-R07",
+            "B2-R04"
+          ]
+        },
+        "ai": {
+          "score": 5,
+          "confidence": "M",
+          "evidence": [
+            "B-P1-C5",
+            "B-P1-C6",
+            "B·R01",
+            "B-P1-C5",
+            "B·R01"
+          ]
+        },
+        "feasibility": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "B·R01",
+            "B-P1-C6",
+            "B2-R04"
+          ]
+        },
+        "demo": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "B-P1 §6"
+          ]
+        },
+        "sustainability": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "B2-R08",
+            "B2-R48",
+            "B2-R16"
+          ]
+        }
+      },
+      "theme_gate_pass": true,
+      "weighted_total": 77.0,
+      "changes": [
+        {
+          "criterion": "ai",
+          "from": 4,
+          "to": 5,
+          "reason": "Anchor argument: anchor 5 requires load-bearing AI, a measurable oracle and an evidenced mechanism (paper); B·R01 meets all three. My 2A deduction for non-replication and token cost belongs to feasibility, not ai.",
+          "triggered_by": "C"
+        }
+      ]
+    },
+    "B-P4": {
+      "scores": {
+        "demand": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "B-P4-C1 (split)",
+            "B-P4-C2",
+            "B2-R06",
+            "B2-R17",
+            "B2-R18"
+          ]
+        },
+        "international": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "B-P4-C2",
+            "B2-R18",
+            "B2-R06",
+            "B2-R17"
+          ]
+        },
+        "innovation": {
+          "score": 3,
+          "confidence": "L",
+          "evidence": [
+            "B2-R19",
+            "B2-R20",
+            "B·R01",
+            "B-P4-C4"
+          ]
+        },
+        "theme": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "B-P4-C2",
+            "B2-R06",
+            "B2-R17"
+          ]
+        },
+        "ai": {
+          "score": 3,
+          "confidence": "L",
+          "evidence": [
+            "B-P4-C4 (HYPOTHESIS)",
+            "B·R01"
+          ]
+        },
+        "feasibility": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "B-P4 §6",
+            "B2-R19"
+          ]
+        },
+        "demo": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "B-P4 §6"
+          ]
+        },
+        "sustainability": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "B2-R06",
+            "B2-R17",
+            "B-P4-C1"
+          ]
+        }
+      },
+      "theme_gate_pass": true,
+      "weighted_total": 61.0,
+      "changes": []
+    },
+    "C-P1": {
+      "scores": {
+        "demand": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "C-P1-C2",
+            "C-P1-C3",
+            "B2-R12",
+            "B2-R50",
+            "A·R06"
+          ]
+        },
+        "international": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "B2-R12",
+            "B2-R43",
+            "A·R05",
+            "B2-R11"
+          ]
+        },
+        "innovation": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "B2-R11",
+            "C-P1-C5",
+            "B2-R44",
+            "C·R05"
+          ]
+        },
+        "theme": {
+          "score": 4,
+          "confidence": "H",
+          "evidence": [
+            "C-P1-C1",
+            "C·R01",
+            "C·R02"
+          ]
+        },
+        "ai": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "C-P1-C7",
+            "C·R03"
+          ]
+        },
+        "feasibility": {
+          "score": 5,
+          "confidence": "H",
+          "evidence": [
+            "B2-R11",
+            "C-P1 §6"
+          ]
+        },
+        "demo": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "C-P1-C6"
+          ]
+        },
+        "sustainability": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "B2-R50",
+            "A·R08e",
+            "C·R05"
+          ]
+        }
+      },
+      "theme_gate_pass": true,
+      "weighted_total": 64.0,
+      "changes": []
+    },
+    "C-P4": {
+      "scores": {
+        "demand": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "C-P4-C2",
+            "C-P4-C3",
+            "B2-R03",
+            "B2-R26",
+            "B2-R27",
+            "B2-R21",
+            "B2-R22",
+            "B2-R23"
+          ]
+        },
+        "international": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "B2-R05",
+            "B2-R21",
+            "B2-R22",
+            "B2-R25",
+            "B2-R10",
+            "B2-R23",
+            "B2-R24",
+            "B2-R05",
+            "B2-R59",
+            "C·R21",
+            "B2-R64"
+          ]
+        },
+        "innovation": {
+          "score": 2,
+          "confidence": "L",
+          "evidence": [
+            "C-P4-C5",
+            "C·R26",
+            "B2-R28",
+            "B2-R29",
+            "B2-R27"
+          ]
+        },
+        "theme": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "C-P4-C1",
+            "C-P4-C7",
+            "B2-R05"
+          ]
+        },
+        "ai": {
+          "score": 2,
+          "confidence": "H",
+          "evidence": [
+            "C-P4-C7"
+          ]
+        },
+        "feasibility": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "C-P4-C8"
+          ]
+        },
+        "demo": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "C-P4-C6"
+          ]
+        },
+        "sustainability": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "B2-R28",
+            "B2-R26",
+            "B2-R56",
+            "B2-R57"
+          ]
+        }
+      },
+      "theme_gate_pass": false,
+      "weighted_total": 57.0,
+      "changes": [
+        {
+          "criterion": "international",
+          "from": 4,
+          "to": 3,
+          "reason": "Brief rule: snippet-only evidence cannot justify >3. My North America support (FCC/AARP) was snippet-only; opened evidence covers Europe (UK; France copper closure, which does not mention alarms) and Asia only as a 2019 fire-alarm analogue (FDMA); plus country-specific alarm standards and life-safety liability.",
+          "triggered_by": "own"
+        },
+        {
+          "criterion": "sustainability",
+          "from": 3,
+          "to": 4,
+          "reason": "Opened Hillingdon cabinet minutes (2025-09-18): GBP 235,364 12-month ARC contract with Appello incl. ~6,500 connections and GBP 15,000 to BT for transferring line responsibilities, explicitly to prepare for the Jan 2027 switchover; Openreach reports >70,000 telecare customers upgraded. Verified institutional spending on the transition job; not 5 because spend is not on a handover tool and liability is unclear.",
+          "triggered_by": "C"
+        }
+      ]
+    }
+  }
+}

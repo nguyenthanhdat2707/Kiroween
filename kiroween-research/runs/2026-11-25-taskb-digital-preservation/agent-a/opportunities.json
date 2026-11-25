@@ -1,0 +1,307 @@
+{
+  "agent": "A",
+  "round": 1,
+  "model_observed": null,
+  "effort_observed": null,
+  "opportunities": [
+    {
+      "id": "A-O1",
+      "title": "Post-Grant Academic & Digital Humanities Web-App Staticization",
+      "dimensions": ["software", "knowledge", "content"],
+      "target_users": [
+        "Bioinformatics and computational research labs",
+        "Digital Humanities scholars",
+        "University libraries and institutional repository managers"
+      ],
+      "regions_with_direct_evidence": ["NA", "EU", "Asia"],
+      "demand_type": "demonstrated",
+      "strongest_alternative": "The Endings Project (UVic) + Webrecorder/Browsertrix (WACZ) + Zenodo/Software Heritage",
+      "strongest_counterevidence": "Wren et al. (2017) showed 94% of highly cited scientific resources relocate successfully on their own versus 34% of uncited ones, meaning many disappearing tools lack active demand, and compute-heavy servers cannot be purely staticized.",
+      "ai_role": "useful",
+      "legal_risk": "low",
+      "key_claims": ["A-O1-C1", "A-O1-C2", "A-O1-C3"],
+      "falsifier": "Attempt semi-automated staticization/WASM packaging on 20 randomly sampled open-source decaying academic/DH web apps within 48 hours; if fewer than 25% retain core functionality due to heavy backend/DB dependencies, reject broad staticization.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 4,
+          "confidence": "H",
+          "basis": "Peer-reviewed studies verify 31% decay across 3,649 bioinformatics web servers and 9.3-year median lifespan across 14,489 scholarly URLs, though direct WTP for a new tool is unverified."
+        },
+        "international": {
+          "provisional_score": 5,
+          "confidence": "H",
+          "basis": "Evidence spans 375 international journals and Web of Science citations across NA, EU, and Asia with shared open-science standards."
+        },
+        "innovation": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Endings Project requires upfront redesign and WACZ captures presentation rather than computation, leaving a plausible retrofit gap."
+        },
+        "theme": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Anchored in retired academic web services and WebCite's 2023 shutdown, though framed more around scholarly workflows than one iconic dead product."
+        },
+        "ai": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "AI can assist dependency analysis and static/WASM conversion, but much of the pipeline is achievable with deterministic static analysis."
+        },
+        "feasibility": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "A scoped prototype converting a class of open-source academic web apps into static/WACZ bundles is achievable within 7 days using public repositories."
+        },
+        "demo": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "Clear before/after showing a broken legacy research web app running offline in-browser, though requiring brief scholarly context."
+        },
+        "sustainability": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "University libraries and public research funders have established preservation budgets and low legal friction under open licenses."
+        }
+      }
+    },
+    {
+      "id": "A-O2",
+      "title": "Post-Shutdown SaaS & Federated Export Semantic Rehydration",
+      "dimensions": ["user-data-workflows", "content", "knowledge"],
+      "target_users": [
+        "Product/design teams and SMEs migrating off discontinued SaaS",
+        "Fediverse (Mastodon/ActivityPub) users and instance admins facing server shutdowns",
+        "Knowledge workers transferring personal/AI work histories across platforms"
+      ],
+      "regions_with_direct_evidence": ["NA", "EU", "Asia"],
+      "demand_type": "mixed",
+      "strongest_alternative": "Data Transfer Project (DTI) + native competitor importers (Figma, Miro, Notion)",
+      "strongest_counterevidence": "Leading commercial competitors often build free native importers for major shutting-down rivals (e.g., Miro acquiring InVision Freehand), and post-shutdown exports frequently omit internal relational IDs or business logic.",
+      "ai_role": "load-bearing",
+      "legal_risk": "medium",
+      "key_claims": ["A-O2-C1", "A-O2-C2", "A-O2-C3", "A-O2-C4"],
+      "falsifier": "Inspect 3 real export archives (Mastodon Activity Streams 2.0, Cohost export, and a public SaaS export); if original exports strip foreign-key/thread references so that <50% of relational context is recoverable, reject the space.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "Backed by EU Data Act enforcement (Sept 2025), 3,626 stars on DTP, Mastodon's documented post-import limitation, and InVision's permanent data deletion (Dec 2024), though direct WTP for a generic rehydrator is unverified."
+        },
+        "international": {
+          "provisional_score": 5,
+          "confidence": "H",
+          "basis": "EU Data Act applies extraterritorially to EU-serving providers, DTI operates globally from NA, and SaaS/Fediverse lock-in affects NA, EU, and Asia alike."
+        },
+        "innovation": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "DTI/DTP focuses on simplified canonical models and Mastodon cannot import exported posts, leaving a concrete post-export relational usability gap."
+        },
+        "theme": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Meets the gate when anchored to exports from specifically discontinued platforms (e.g., Cohost Jan 2025 or InVision Dec 2024), but risks drifting into generic ETL."
+        },
+        "ai": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "AI is load-bearing for inferring undocumented schemas and relational graphs across heterogeneous export dumps, verifiable against deterministic referential-integrity checks."
+        },
+        "feasibility": {
+          "provisional_score": 5,
+          "confidence": "H",
+          "basis": "A working core slice operating on legal real-world export files (e.g., Mastodon Activity Streams 2.0 or public Cohost exports) is achievable within 7 days."
+        },
+        "demo": {
+          "provisional_score": 5,
+          "confidence": "H",
+          "basis": "Highly visual under-3-minute before/after: ingesting an unusable flat JSON/ZIP export and restoring an interactive, linked workspace exportable to open formats."
+        },
+        "sustainability": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "Clear B2B compliance and migration revenue path tied to EU Data Act switching mandates (fee ban Jan 2027), with manageable medium legal risk around multi-user data."
+        }
+      }
+    },
+    {
+      "id": "A-O3",
+      "title": "Automated Environment Discovery & Configuration for Institutional Software Emulation",
+      "dimensions": ["software", "heritage"],
+      "target_users": [
+        "University library born-digital preservation labs",
+        "Museums and national archives operating emulation infrastructure (EaaSI/SPN members)"
+      ],
+      "regions_with_direct_evidence": ["NA", "EU"],
+      "demand_type": "demonstrated",
+      "strongest_alternative": "EaaSI (Yale/SPN) with manual archivist configuration + Internet Archive Software Collection",
+      "strongest_counterevidence": "The institutional GLAM market is tiny and grant-dependent (Mellon/Sloan/IMLS), and the U.S. Copyright Office's Oct 2024 DMCA §1201 decision rejected remote research access to preserved games, capping institutional ROI.",
+      "ai_role": "load-bearing",
+      "legal_risk": "medium",
+      "key_claims": ["A-O3-C1", "A-O3-C2", "A-O3-C3"],
+      "falsifier": "Benchmark automated manual/header parsing plus sandbox boot-testing on 15 public/shareware DOS/Win3.1/Mac68k titles; if automated boot success is <50% or does not outperform default DOSBox/IA presets, reject.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 3,
+          "confidence": "H",
+          "basis": "Primary Stanford BDPL/EaaSI case study confirms 2 full days of manual trial-and-error for a single 1985 title, but the addressable institutional buyer base is narrow."
+        },
+        "international": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "Verified across NA and EU via SPN, EaaSI, DPC, and IIPC networks; direct Asian emulation deployment evidence was not found in this round."
+        },
+        "innovation": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "No existing tool automates end-to-end documentation parsing, emulator/OS matrix matching, and sandboxed boot verification for EaaSI workflows."
+        },
+        "theme": {
+          "provisional_score": 5,
+          "confidence": "H",
+          "basis": "Directly brings verifiably obsolete operating systems and discontinued software back to life."
+        },
+        "ai": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "AI extracts system requirements from legacy manuals/headers and proposes candidate environments checked by a measurable boot/render oracle."
+        },
+        "feasibility": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Feasible for 1-2 open emulators (e.g., DOSBox/v86 in browser) within 7 days, but carries material licensing risk around proprietary legacy OS images/ROMs."
+        },
+        "demo": {
+          "provisional_score": 5,
+          "confidence": "H",
+          "basis": "Compelling under-3-minute demo: drop a legacy disk image and scanned manual, watch the system infer requirements and boot the software live."
+        },
+        "sustainability": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Plausible as grant-funded open-source tooling integrated into EaaSI/SPN, but not viable as a standalone commercial product."
+        }
+      }
+    },
+    {
+      "id": "A-O4",
+      "title": "End-of-Life Sunset & Community Handover Governance for Live-Service Platforms",
+      "dimensions": ["operational", "community", "software"],
+      "target_users": [
+        "Open-source server preservation communities (e.g., Pretendo Network)",
+        "Indie and mid-size EU game/platform publishers facing upcoming EC EOL code of conduct",
+        "Independent community platform operators planning graceful shutdowns"
+      ],
+      "regions_with_direct_evidence": ["NA", "EU", "Asia"],
+      "demand_type": "demonstrated",
+      "strongest_alternative": "Post-shutdown clean-room reverse engineering by volunteers (Pretendo Network, Wiimmfi) or manual publisher offline patches",
+      "strongest_counterevidence": "Major publishers strongly oppose EOL obligations due to third-party middleware licensing and liability, and the European Commission explicitly declined mandatory legislation on June 16, 2026.",
+      "ai_role": "unnecessary",
+      "legal_risk": "high",
+      "key_claims": ["A-O4-C1", "A-O4-C2", "A-O4-C3"],
+      "falsifier": "Conduct structured interviews with 10 indie game studios or independent platform operators in EU/NA on adopting an EC-aligned EOL handover kit; if >=8/10 refuse even if free due to middleware IP/security liability, reject the publisher-side model.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 5,
+          "confidence": "H",
+          "basis": "1,294,188 validated EU signatures on Stop Destroying Videogames ECI, 170 active Pretendo GitHub repos, and major platform shutdowns (Cohost, Tianya)."
+        },
+        "international": {
+          "provisional_score": 5,
+          "confidence": "H",
+          "basis": "Direct primary evidence across EU (ECI), NA (Cohost, DMCA §1201), and Asia (Nintendo 3DS/Wii U, Tianya Club China)."
+        },
+        "innovation": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "A standardized lightweight EOL handover kit is missing, but the core bottleneck is legal and economic rather than purely technical."
+        },
+        "theme": {
+          "provisional_score": 4,
+          "confidence": "H",
+          "basis": "Directly anchored in discontinued online services (Nintendo Network 3DS/Wii U, Cohost) and keeping them operational."
+        },
+        "ai": {
+          "provisional_score": 1,
+          "confidence": "H",
+          "basis": "AI is unnecessary for the core problem of IP licensing, architecture decoupling, and EOL governance; adding AI would be decorative."
+        },
+        "feasibility": {
+          "provisional_score": 2,
+          "confidence": "M",
+          "basis": "Depends on publisher cooperation not in hand or enters high-risk DRM/EULA reverse-engineering territory if built third-party."
+        },
+        "demo": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Demonstrating a synthetic client-server sunset handover works technically but relies on synthetic apps rather than real commercial services."
+        },
+        "sustainability": {
+          "provisional_score": 1,
+          "confidence": "H",
+          "basis": "High legal risk (DMCA §1201, third-party middleware IP) and no verified payer after publisher support ends."
+        }
+      }
+    },
+    {
+      "id": "A-O5",
+      "title": "Consent-Aware & Sovereign Community Digital Heritage Preservation",
+      "dimensions": ["heritage", "community", "content"],
+      "target_users": [
+        "Indigenous and minority cultural heritage stewards (GIDA/CARE-aligned)",
+        "Independent community archives preserving shutting-down regional platforms",
+        "National libraries operating permission-based private web archiving (e.g., NDL WARP)"
+      ],
+      "regions_with_direct_evidence": ["NA", "EU", "Asia"],
+      "demand_type": "mixed",
+      "strongest_alternative": "Mukurtu CMS + Webrecorder/WACZ + national selective web archives (NDL WARP, NLK OASIS)",
+      "strongest_counterevidence": "Opt-in consent workflows incur heavy administrative overhead and low coverage, which is why Singapore amended its NLB Act in 2019 to drop prior written consent for .sg domains.",
+      "ai_role": "useful",
+      "legal_risk": "medium",
+      "key_claims": ["A-O5-C1", "A-O5-C2", "A-O5-C3"],
+      "falsifier": "Survey 15 community archive leads or closing-forum admins offering (a) free public Wayback/WACZ archival vs (b) a consent-and-PII-redacted gated archive requiring 2 hours of setup; if >80% choose (a), reject.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Strong legal and institutional signals (NDL Law exclusions, GDPR Art. 89, Hachette v. IA, GIDA CARE, DPC Bit List), but limited direct evidence of demand for a new tool over Mukurtu/WACZ."
+        },
+        "international": {
+          "provisional_score": 5,
+          "confidence": "H",
+          "basis": "Direct primary evidence across Japan (NDL WARP), Korea/Singapore (OASIS/IIPC), EU (GDPR Art. 89), NA (Hachette v. IA), and global Indigenous networks (GIDA)."
+        },
+        "innovation": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Mukurtu handles cultural access controls and WACZ handles web packaging; combining automated PII/consent triage with portable web archives is a moderate gap."
+        },
+        "theme": {
+          "provisional_score": 2,
+          "confidence": "M",
+          "basis": "Below the Resurrection gate (>=3): focuses on archival ethics and legal compliance broadly rather than reviving a specific dead technology."
+        },
+        "ai": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "AI helps detect multilingual PII and sensitive entities for GDPR Art. 89 safeguards with human-in-the-loop review, partially replaceable by rules/NER."
+        },
+        "feasibility": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "A consent-tagged WACZ packaging and PII redaction pipeline is feasible within 7 days using open datasets."
+        },
+        "demo": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Policy- and compliance-oriented value requires domain explanation to resonate with a general hackathon panel."
+        },
+        "sustainability": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Plausible institutional/NGO grant model with a cleaner legal posture than indiscriminate scraping, though unverified commercially."
+        }
+      }
+    }
+  ]
+}

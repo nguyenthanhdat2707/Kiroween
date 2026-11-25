@@ -1,0 +1,524 @@
+{
+  "agent": "B",
+  "round": 2,
+  "model_observed": "claude-sonnet-5-5",
+  "effort_observed": null,
+  "opportunities": [
+    {
+      "id": "B-O1",
+      "title": "End-of-life of server-dependent software: live-service games",
+      "dimensions": [
+        "software",
+        "operational",
+        "community",
+        "heritage"
+      ],
+      "target_users": [
+        "Demand side: players of shut-down server-dependent games (1,294,188 verified ECI signatories; Homecoming donors)",
+        "Action/payer side: publishers facing the EC end-of-life code of conduct (no demonstrated willingness)",
+        "Community revival teams (Homecoming, Pretendo)",
+        "Game libraries/archives (VGHF)"
+      ],
+      "regions_with_direct_evidence": [
+        "EU",
+        "NA",
+        "Asia"
+      ],
+      "demand_type": "demonstrated",
+      "strongest_alternative": "Community revival servers (Homecoming, Pretendo Network) plus commercial re-release of offline games (GOG Preservation Program, 337 games)",
+      "strongest_counterevidence": "The EC (16 Jun 2026) declined any legal obligation citing IP rights, and the parties who would have to act (publishers) show negative demand; even successful revivals cannot recover vendor-held account data (Pretendo: existing NNIDs do not work).",
+      "ai_role": "useful",
+      "legal_risk": "high",
+      "key_claims": [
+        "B-O1-C1",
+        "B-O1-C2",
+        "B-O1-C3",
+        "B-O1-C4",
+        "B-O1-C5",
+        "B-O1-C6"
+      ],
+      "falsifier": "Sample 20 live-service games shut down 2024-2026 in EU/NA/JP; if >=50% already have an official offline mode or a working community server, the gap is small; if <10% do despite large communities, the blocker is legal, not technical.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "Player demand demonstrated (ECI 1,294,188 confirmed by EC and heise; donations); publisher demand negative (EC reply, ESA); no evidence of demand for a new solution."
+        },
+        "international": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "Direct evidence in EU (ECI), NA (City of Heroes, VGHF) and Asia (Japan >70% live-service games end within 3 years); legal barriers differ by region."
+        },
+        "innovation": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "No checked alternative preserves server-side functionality, but community emulators partly cover the job; commercial sunsetting services not searched."
+        },
+        "theme": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "Specific discontinued games (City of Heroes) anchor the revived workflow."
+        },
+        "ai": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "AI may help protocol/server reconstruction, unevidenced in this session."
+        },
+        "feasibility": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Needs a legally usable dead game with available client; licensing is the material risk."
+        },
+        "demo": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "Before/after (game refuses to start -> game playable) is clear to an international panel."
+        },
+        "sustainability": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Homecoming monthly donation goals filled 'in days, if not hours' (PC Gamer, opened); paid re-release market exists (GOG); no evidence anyone pays for an EOL tool or standard."
+        }
+      },
+      "status": "revised",
+      "merge_with": [
+        "A-O4",
+        "C-O2"
+      ],
+      "changes": [
+        {
+          "field": "strongest_alternative",
+          "from": "Community-run server emulators (Homecoming) plus voluntary publisher offline patches",
+          "to": "Community revival servers (Homecoming, Pretendo Network) plus commercial re-release of offline games (GOG Preservation Program, 337 games)",
+          "reason": "Pretendo (A, C) and GOG Preservation Program were overlooked in Round 1",
+          "triggered_by": "A"
+        },
+        {
+          "field": "strongest_counterevidence",
+          "from": "The European Commission (16 Jun 2026) declined any legal obligation to keep games playable, citing IP rights, and the ESA says it will never support remote research access.",
+          "to": "The EC (16 Jun 2026) declined any legal obligation citing IP rights, and the parties who would have to act (publishers) show negative demand; even successful revivals cannot recover vendor-held account data (Pretendo: existing NNIDs do not work).",
+          "reason": "Pretendo FAQ (opened) shows vendor-held account data is unrecoverable; demand/payer split",
+          "triggered_by": "C"
+        },
+        {
+          "field": "target_users",
+          "from": [
+            "Players who bought server-dependent games (1.29M EU ECI signatories)",
+            "Community revival server teams (e.g. City of Heroes Homecoming)",
+            "Publishers facing the EC end-of-life code of conduct",
+            "Game libraries/archives (VGHF)"
+          ],
+          "to": [
+            "Demand side: players of shut-down server-dependent games (1,294,188 verified ECI signatories; Homecoming donors)",
+            "Action/payer side: publishers facing the EC end-of-life code of conduct (no demonstrated willingness)",
+            "Community revival teams (Homecoming, Pretendo)",
+            "Game libraries/archives (VGHF)"
+          ],
+          "reason": "Separate who wants it (players) from who must act or pay (publishers), as challenged for A-O4",
+          "triggered_by": "own"
+        },
+        {
+          "field": "rubric_evidence.sustainability",
+          "from": "3/L",
+          "to": "3/M",
+          "reason": "Donation evidence now confirmed by an independent source opened directly",
+          "triggered_by": "own"
+        },
+        {
+          "field": "merge_with",
+          "from": null,
+          "to": [
+            "A-O4",
+            "C-O2"
+          ],
+          "reason": "Three agents independently converged on the same root problem",
+          "triggered_by": "A"
+        }
+      ]
+    },
+    {
+      "id": "B-O2",
+      "title": "Shutdown window of small/mid community platforms",
+      "dimensions": [
+        "user-data-workflows",
+        "community",
+        "content"
+      ],
+      "target_users": [
+        "Operators of small platforms that are closing (Cohost, Glitch)",
+        "Their users (posts, apps, photos)",
+        "ArchiveTeam volunteers"
+      ],
+      "regions_with_direct_evidence": [
+        "NA",
+        "Asia",
+        "Other"
+      ],
+      "demand_type": "mixed",
+      "strongest_alternative": "ArchiveTeam + Internet Archive + operator-built export/redirect + Mastodon-style documented exports (Activity Streams 2.0) + GDPR Art. 20",
+      "strongest_counterevidence": "Cohost and Glitch already shipped exports/redirects and ArchiveTeam archived Cohost; Cohost was small (21,142 MAU in Nov 2023), so the gap may be timing and funding rather than missing tools.",
+      "ai_role": "unnecessary",
+      "legal_risk": "medium",
+      "key_claims": [
+        "B-O2-C1",
+        "B-O2-C2",
+        "B-O2-C3",
+        "B-O2-C4",
+        "B-O2-C5",
+        "B-O2-C6"
+      ],
+      "falsifier": "Review 20 platform shutdown notices from 2024-2026 (ArchiveTeam Deathwatch); if >=70% already provide export + redirect + >=90 days notice, the hypothesis fails.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Secondary evidence of shutdowns and archivist effort (R11-R14), Cyworld 2021 surge only as snippet; no direct demand for a new solution."
+        },
+        "international": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "NA (Cohost, Glitch), Korea (Cyworld), South Africa (Mxit)."
+        },
+        "innovation": {
+          "provisional_score": 2,
+          "confidence": "M",
+          "basis": "ArchiveTeam, DTI and operator exports cover much of the job."
+        },
+        "theme": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Specific shut-down platforms (Cohost, Glitch) but value is mostly archival."
+        },
+        "ai": {
+          "provisional_score": 1,
+          "confidence": "M",
+          "basis": "No load-bearing AI role identified."
+        },
+        "feasibility": {
+          "provisional_score": 4,
+          "confidence": "L",
+          "basis": "Public exports/archives exist to work with; privacy limits scope."
+        },
+        "demo": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Needs explanation of shutdown mechanics."
+        },
+        "sustainability": {
+          "provisional_score": 2,
+          "confidence": "M",
+          "basis": "Dying operators have no money (Cohost); Cyworld restoration failed for lack of funding."
+        }
+      },
+      "status": "revised",
+      "merge_with": [],
+      "changes": [
+        {
+          "field": "strongest_counterevidence",
+          "from": "Cohost and Glitch already shipped exports and redirects and ArchiveTeam archived Cohost, so the gap may be timing and funding rather than missing tools.",
+          "to": "Cohost and Glitch already shipped exports/redirects and ArchiveTeam archived Cohost; Cohost was small (21,142 MAU in Nov 2023), so the gap may be timing and funding rather than missing tools.",
+          "reason": "Wikipedia (opened) shows Cohost's actual MAU",
+          "triggered_by": "A"
+        },
+        {
+          "field": "strongest_alternative",
+          "from": "ArchiveTeam + Internet Archive + operator-built export/redirect + GDPR Art. 20",
+          "to": "ArchiveTeam + Internet Archive + operator-built export/redirect + Mastodon-style documented exports (Activity Streams 2.0) + GDPR Art. 20",
+          "reason": "Mastodon export/move documented by A; format is publicly specified",
+          "triggered_by": "A"
+        },
+        {
+          "field": "claim B-O2-C5 label",
+          "from": "VERIFIED",
+          "to": "INFERENCE",
+          "reason": "Only one opened source (same publisher as the snippet)",
+          "triggered_by": "own"
+        }
+      ]
+    },
+    {
+      "id": "B-O3",
+      "title": "Unpreserved scholarly record (small and open-access journals)",
+      "dimensions": [
+        "knowledge",
+        "content",
+        "heritage"
+      ],
+      "target_users": [
+        "Small journal editors",
+        "University libraries",
+        "Researchers relying on citations"
+      ],
+      "regions_with_direct_evidence": [
+        "EU",
+        "NA"
+      ],
+      "demand_type": "mixed",
+      "strongest_alternative": "CLOCKSS / LOCKSS / Portico / PKP Preservation Network / Internet Archive Scholar (not opened this session)",
+      "strongest_counterevidence": "Part of the vanished journals may be predatory (Shelomi comment), and specialised preservation infrastructure already exists; the problem is participation, not technology.",
+      "ai_role": "unnecessary",
+      "legal_risk": "low",
+      "key_claims": [
+        "B-O3-C1",
+        "B-O3-C2",
+        "B-O3-C3"
+      ],
+      "falsifier": "Check 50 random 'unpreserved' DOIs from Eve's dataset; if >=80% are still accessible and captured by IA Scholar, urgency is overstated.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Peer-reviewed measurements (R5, R7) show the problem; no evidence of demand for a new solution."
+        },
+        "international": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "Laakso et al. report vanished journals across all regions; mechanism is global."
+        },
+        "innovation": {
+          "provisional_score": 1,
+          "confidence": "L",
+          "basis": "Specialised archives already cover the core job."
+        },
+        "theme": {
+          "provisional_score": 1,
+          "confidence": "M",
+          "basis": "No specific dead technology; fails the theme gate."
+        },
+        "ai": {
+          "provisional_score": 1,
+          "confidence": "M",
+          "basis": "AI not needed for the core problem."
+        },
+        "feasibility": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Open datasets exist; scope must be narrow."
+        },
+        "demo": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "Value is abstract on screen."
+        },
+        "sustainability": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Library membership models exist but were not verified this session."
+        }
+      },
+      "status": "withdrawn",
+      "merge_with": [
+        "C-O1"
+      ],
+      "changes": [
+        {
+          "field": "status",
+          "from": "active",
+          "to": "withdrawn",
+          "reason": "C checked JASPER/PKP PN/Keepers (free incumbents) and read Eve more cautiously; C's evidence is stronger and B-O3 fails the theme gate",
+          "triggered_by": "C"
+        },
+        {
+          "field": "claims B-O3-C1..C3 labels",
+          "from": "VERIFIED",
+          "to": "INFERENCE",
+          "reason": "Single-study findings or author opinion; Eve reports 27.64% 'seemingly unpreserved'",
+          "triggered_by": "C"
+        }
+      ]
+    },
+    {
+      "id": "B-O4",
+      "title": "Heritage of dead regional platforms (Japanese keitai, early Chinese web, Mxit)",
+      "dimensions": [
+        "heritage",
+        "software",
+        "content"
+      ],
+      "target_users": [
+        "Keitai preservation community (Kahvibreak, Keitai Wiki)",
+        "Game and digital-culture historians",
+        "Japanese game heritage organisations"
+      ],
+      "regions_with_direct_evidence": [
+        "Asia",
+        "Other"
+      ],
+      "demand_type": "demonstrated",
+      "strongest_alternative": "Kahvibreak community tooling (ktdumper), DoJa 5.1 SDK emulator, SquirrelJME, Melange, G-MODE Archives re-releases; commercial re-releases (G-MODE Archives, HAMSTER Appli Archives)",
+      "strongest_counterevidence": "The bottleneck is hardware access and encryption keys, which the volunteer community is already solving; redistribution remains legally blocked.",
+      "ai_role": "useful",
+      "legal_risk": "high",
+      "key_claims": [
+        "B-O4-C1",
+        "B-O4-C2",
+        "B-O4-C3",
+        "B-O4-C4",
+        "B-O4-C5"
+      ],
+      "falsifier": "Take the top 100 keitai games listed on Keitai Wiki; if >=70% are already dumped and run on existing emulators, there is no remaining software gap.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Large demonstrated volunteer effort (R8) but small community; no user demand for a new tool."
+        },
+        "international": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Strong Asia evidence plus Africa (Mxit); NA/EU audience for keitai is unverified."
+        },
+        "innovation": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "Community tooling covers much of the job."
+        },
+        "theme": {
+          "provisional_score": 5,
+          "confidence": "H",
+          "basis": "i-mode/EZweb are verifiably discontinued (services ended) and central to any demo."
+        },
+        "ai": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Possible decompilation/translation help; not evidenced for keitai specifically."
+        },
+        "feasibility": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "Depends on dumped games and hardware not in hand; legal grey zone."
+        },
+        "demo": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "Lost game running again is visually clear."
+        },
+        "sustainability": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "Commercial re-release of keitai titles shows some paid demand for rescued content (Hit Save, single source); preservation tooling itself is donation-funded and legally grey."
+        }
+      },
+      "status": "revised",
+      "merge_with": [],
+      "changes": [
+        {
+          "field": "strongest_alternative",
+          "from": "Kahvibreak community tooling (ktdumper), DoJa 5.1 SDK emulator, SquirrelJME, Melange, G-MODE Archives re-releases",
+          "to": "Kahvibreak community tooling (ktdumper), DoJa 5.1 SDK emulator, SquirrelJME, Melange, G-MODE Archives re-releases; commercial re-releases (G-MODE Archives, HAMSTER Appli Archives)",
+          "reason": "Commercial re-release was in my own source but not listed",
+          "triggered_by": "own"
+        },
+        {
+          "field": "rubric_evidence.sustainability",
+          "from": "1/M",
+          "to": "2/L",
+          "reason": "Evidence of spending on rescued content, single source",
+          "triggered_by": "own"
+        },
+        {
+          "field": "claims B-O4-C1,C2,C5 labels",
+          "from": "VERIFIED",
+          "to": "INFERENCE",
+          "reason": "No independent confirmation opened (Time Extension 403)",
+          "triggered_by": "own"
+        }
+      ]
+    },
+    {
+      "id": "B-O5",
+      "title": "AI-assisted source reconstruction of abandoned software with a byte-match oracle",
+      "dimensions": [
+        "software",
+        "heritage"
+      ],
+      "target_users": [
+        "Retro game decompilation communities (GBA/N64)",
+        "Preservation programmers",
+        "Software libraries"
+      ],
+      "regions_with_direct_evidence": [
+        "NA"
+      ],
+      "demand_type": "hypothetical",
+      "strongest_alternative": "m2c + decomp-permuter + objdiff community tooling; Ghidra/IDA; academic LLM-decompile models",
+      "strongest_counterevidence": "DecompileBench finds LLM decompilers 52.2% lower in functional correctness than commercial tools when no oracle is used, and the 74% match result comes from a single blog author on 60 functions. The tools-only (m2c + permuter) baseline is not published in text, so the LLM's marginal contribution is unmeasured.",
+      "ai_role": "load-bearing",
+      "legal_risk": "medium",
+      "key_claims": [
+        "B-O5-C1",
+        "B-O5-C2",
+        "B-O5-C3",
+        "B-O5-C4"
+      ],
+      "falsifier": "Re-run a public matching-decompilation benchmark on 30 functions from a different project; if the LLM adds <15 percentage points over tools alone, AI is not load-bearing.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "Decomp communities exist; demand not measured this session."
+        },
+        "international": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "Evidence only from one author and global open-source projects."
+        },
+        "innovation": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Active area with academic and community entrants."
+        },
+        "theme": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Abandoned software anchors the work but the dead technology is generic unless one title is chosen."
+        },
+        "ai": {
+          "provisional_score": 4,
+          "confidence": "L",
+          "basis": "Byte-match oracle makes output mechanically checkable, but the only benchmark is a single blog (n=60) without a published tools-only baseline; load-bearing remains a hypothesis."
+        },
+        "feasibility": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Needs a legally usable binary and an existing decomp project."
+        },
+        "demo": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Function match is visible but needs explanation."
+        },
+        "sustainability": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "Volunteer communities; derivative-code legal risk."
+        }
+      },
+      "status": "revised",
+      "merge_with": [],
+      "changes": [
+        {
+          "field": "rubric_evidence.ai",
+          "from": "5/M",
+          "to": "4/L",
+          "reason": "Coordinator AI-necessity check: conventional baseline not established",
+          "triggered_by": "own"
+        },
+        {
+          "field": "strongest_counterevidence",
+          "from": "DecompileBench finds LLM decompilers 52.2% lower in functional correctness than commercial tools when no oracle is used, and the 74% match result comes from a single blog author on 60 functions.",
+          "to": "DecompileBench finds LLM decompilers 52.2% lower in functional correctness than commercial tools when no oracle is used, and the 74% match result comes from a single blog author on 60 functions. The tools-only (m2c + permuter) baseline is not published in text, so the LLM's marginal contribution is unmeasured.",
+          "reason": "Missing baseline",
+          "triggered_by": "own"
+        },
+        {
+          "field": "claims B-O5-C1,C2 labels",
+          "from": "VERIFIED",
+          "to": "INFERENCE",
+          "reason": "Single blog / single study",
+          "triggered_by": "own"
+        }
+      ]
+    }
+  ]
+}

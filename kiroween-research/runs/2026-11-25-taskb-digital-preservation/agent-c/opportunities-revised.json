@@ -1,0 +1,342 @@
+{
+  "agent": "C",
+  "round": 2,
+  "model_observed": null,
+  "effort_observed": null,
+  "opportunities": [
+    {
+      "id": "C-O1",
+      "title": "Tính đầy đủ và trách nhiệm bàn giao của hồ sơ tạp chí nhỏ",
+      "dimensions": [
+        "content",
+        "knowledge",
+        "user-data-workflows",
+        "operational"
+      ],
+      "target_users": [
+        "Library publishing staff trong Texas Digital Library",
+        "Biên tập viên tạp chí OJS nhỏ đang đóng hoặc chuyển đơn vị chủ trì"
+      ],
+      "regions_with_direct_evidence": [
+        "NA",
+        "EU"
+      ],
+      "demand_type": "mixed",
+      "strongest_alternative": "JASPER + PKP Preservation Network + Keepers Registry",
+      "strongest_counterevidence": "JASPER đã tổ chức các đường bảo tồn và ISSN đã đề xuất timeline archival status, nên khoảng trống mới có thể chỉ là cấu hình và hỗ trợ dịch vụ hiện có.",
+      "ai_role": "unnecessary",
+      "legal_risk": "medium",
+      "key_claims": [
+        "C-O1-C1",
+        "C-O1-C2",
+        "C-O1-C3",
+        "C-O1-C4",
+        "C-O1-C5",
+        "C-O1-C6"
+      ],
+      "falsifier": "Với quyền sử dụng rõ, kiểm 3 tạp chí đang đóng/chuyển bằng JASPER/PKP/Keepers và hỗ trợ có sẵn; loại hướng khác biệt mới nếu tất cả công việc bàn giao quan trọng hoàn tất trong một ngày mỗi tạp chí, không còn sai lệch cần người nhận xử lý.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "INFERENCE C-O1-C1: mất/thiếu hồ sơ được nghiên cứu và TDL có quy trình bảo tồn; R01 https://arxiv.org/abs/2008.11933 và R04 https://texasdigitallibrary.atlassian.net/wiki/spaces/OAJ/pages/1762295809 không chứng minh nhu cầu mua mới."
+        },
+        "international": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "INFERENCE C-O1-C1: có actor NA qua TDL/PKP và EU qua ISSN; R04 và R07 https://www.issn.org/wp-content/uploads/2025/01/PLAN-2025-%E2%80%93-2029-ISSN-INTERNATIONAL-CENTRE_compressed-2.pdf, chưa có actor Asia trực tiếp."
+        },
+        "innovation": {
+          "provisional_score": 1,
+          "confidence": "M",
+          "basis": "INFERENCE C-O1-C2: JASPER/PKP/Keepers bao phủ preservation, routing và kế hoạch status; R05 https://doaj.org/preservation/ và R07 phản bác khoảng trống rộng."
+        },
+        "theme": {
+          "provisional_score": 1,
+          "confidence": "M",
+          "basis": "INFERENCE C-O1-C6: chưa có công nghệ chết cụ thể làm trung tâm, dù R01 chứng minh tạp chí từng biến mất."
+        },
+        "ai": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "HYPOTHESIS C-O1-C5 remains optional metadata assistance; core preservation/completeness is conventional engineering, with no measured lift over manifest and schema reconciliation; Round 2 C-G-C26 and B-O3."
+        },
+        "feasibility": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "INFERENCE C-O1-C6: kiểm một mapping nhỏ có thể giới hạn được nhưng chưa có partner hoặc bộ artifact đúng quyền; R03 https://github.com/pkp/pkp-docs/blob/main/pkp-pn/en/index.md mô tả công cụ có sẵn."
+        },
+        "demo": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "HYPOTHESIS C-O1-C3: before/after về completeness có thể quan sát nhưng cần giải thích domain và chưa có artifact thật."
+        },
+        "sustainability": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "UNKNOWN C-O1-C4: mô hình thư viện/consortium hợp lý từ R03/R05, chưa biết người tài trợ công việc bổ sung hoặc đường ngân sách riêng."
+        }
+      },
+      "status": "revised",
+      "changes": [
+        {
+          "field": "ai_role",
+          "from": "useful",
+          "to": "unnecessary",
+          "reason": "Core completeness uses manifests, checksums and explicit mappings; optional noisy-metadata AI remains an untested hypothesis, as B-O3 and own baseline audit make clear.",
+          "triggered_by": "B"
+        },
+        {
+          "field": "rubric_evidence.ai.provisional_score",
+          "from": "3",
+          "to": "2",
+          "reason": "No measured AI lift; the presence of an oracle is not evidence of necessity (cross-review C-R2-A05 and C-G-C26).",
+          "triggered_by": "own"
+        },
+        {
+          "field": "rubric_evidence.ai.basis",
+          "from": "HYPOTHESIS C-O1-C5: reconciliation có kỹ thuật đáng kể, AI có thể ghép metadata nhiễu nhưng chưa benchmark với rules/manifest; không load-bearing.",
+          "to": "HYPOTHESIS C-O1-C5 remains optional metadata assistance; core preservation/completeness is conventional engineering, with no measured lift over manifest and schema reconciliation; Round 2 C-G-C26 and B-O3.",
+          "reason": "Clarify difference between optional assistance and core requirement.",
+          "triggered_by": "B"
+        }
+      ],
+      "merge_with": [
+        "B-O3"
+      ]
+    },
+    {
+      "id": "C-O2",
+      "title": "Khả năng bàn giao của đội revival trò chơi nhiều người",
+      "dimensions": [
+        "software",
+        "community",
+        "operational",
+        "user-data-workflows"
+      ],
+      "target_users": [
+        "Maintainers của các đội server revival như Pretendo",
+        "Nhóm người chơi Wii U/3DS tổ chức lịch chơi"
+      ],
+      "regions_with_direct_evidence": [
+        "NA",
+        "EU",
+        "Asia"
+      ],
+      "demand_type": "mixed",
+      "strongest_alternative": "Pretendo/nex-go for reconstruction and Homecoming for a documented licensed, donation-supported game revival; existing team runbooks and community governance for succession",
+      "strongest_counterevidence": "Pretendo already supplies core revival engineering and Homecoming is a reported licensed, donor-funded alternative, while no maintainer demand or payer for a separate succession tool is established.",
+      "ai_role": "unnecessary",
+      "legal_risk": "high",
+      "key_claims": [
+        "C-O2-C1",
+        "C-O2-C2",
+        "C-O2-C3",
+        "C-O2-C4",
+        "C-O2-C5",
+        "C-O2-C6"
+      ],
+      "falsifier": "Hai đội revival cho maintainer mới xử lý một incident/bàn giao lịch sử bằng repo và runbook hiện có; loại khoảng trống nếu không còn lỗi quan trọng chưa giải hoặc cả hai đội không coi bàn giao đáng bỏ thời gian, chỉ dùng artifact có quyền.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "VERIFIED C-O2-C1: shutdown Nintendo/Capcom; VERIFIED C-G-C19: ECI có 1.294.188 chữ ký; chưa có yêu cầu trực tiếp của maintainer cho khoảng trống C-O2-C3, R08/R09/R15 trong report."
+        },
+        "international": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "INFERENCE C-O2-C3: có shutdown NA và Asia qua Nintendo, hành vi vận động EU qua R15 https://citizens-initiative.europa.eu/news/14th-valid-initiative-stop-destroying-videogames-submitted-commission-examination-2026-01-26_en; rào cản pháp lý lớn và chưa có demand địa phương ở cả 3 vùng."
+        },
+        "innovation": {
+          "provisional_score": 1,
+          "confidence": "M",
+          "basis": "INFERENCE C-O2-C2: core revival đã có Pretendo/nex-go, R14 https://github.com/PretendoNetwork/nex-go; khoảng trống succession chưa chứng minh."
+        },
+        "theme": {
+          "provisional_score": 5,
+          "confidence": "H",
+          "basis": "VERIFIED C-O2-C1: nền tảng online cụ thể đã chết và là trung tâm công việc; Nintendo https://en-americas-support.nintendo.com/app/answers/detail/a_id/57847 cùng Capcom xác nhận độc lập."
+        },
+        "ai": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "HYPOTHESIS C-O2-C5 concerns optional log/runbook assistance; core succession is achievable through conventional engineering and governance, with no measured AI lift (Round 2 C-G-C26)."
+        },
+        "feasibility": {
+          "provisional_score": 1,
+          "confidence": "L",
+          "basis": "INFERENCE C-O2-C6: chưa có console, trace, quyền hoặc đội đối tác; R13 https://github.com/PretendoNetwork/.github/blob/master/.github/CONTRIBUTING.md và R31 đặt giới hạn ownership/pháp lý."
+        },
+        "demo": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "HYPOTHESIS C-O2-C3: demo continuity cần giải thích và artifact thật chưa có; không thay bằng gameplay giả để chấm 5."
+        },
+        "sustainability": {
+          "provisional_score": 1,
+          "confidence": "L",
+          "basis": "UNKNOWN C-O2-C4 remains: N09/N10 report licensed Homecoming revival and donor support, but these do not transfer rights, funding or purchaser demand to a new Pretendo-maintainer succession tool; legal risk for this scope stays high."
+        }
+      },
+      "status": "revised",
+      "changes": [
+        {
+          "field": "strongest_alternative",
+          "from": "Pretendo Network cùng nex-go, tài liệu contribution và cộng đồng hiện hữu",
+          "to": "Pretendo/nex-go for reconstruction and Homecoming for a documented licensed, donation-supported game revival; existing team runbooks and community governance for succession",
+          "reason": "B-O1/B:R10 introduced a material licensed alternative that defeats an absolute server-preservation gap; see cross-review N09/N10.",
+          "triggered_by": "B"
+        },
+        {
+          "field": "strongest_counterevidence",
+          "from": "Pretendo đã có nền móng revival đáng kể; chưa có bằng chứng maintainers cần một giải pháp bàn giao riêng và tài chính donation chỉ thấy qua snippet.",
+          "to": "Pretendo already supplies core revival engineering and Homecoming is a reported licensed, donor-funded alternative, while no maintainer demand or payer for a separate succession tool is established.",
+          "reason": "Separate demonstrated support for a specific game service from willingness to buy a new maintainer tool.",
+          "triggered_by": "B"
+        },
+        {
+          "field": "ai_role",
+          "from": "useful",
+          "to": "unnecessary",
+          "reason": "Core handover, governance and deterministic compatibility checks do not require AI; log/runbook assistance remains optional.",
+          "triggered_by": "own"
+        },
+        {
+          "field": "rubric_evidence.ai.provisional_score",
+          "from": "3",
+          "to": "2",
+          "reason": "No benchmark for the proposed maintainer job; documented protocol engineering does not itself validate an AI contribution.",
+          "triggered_by": "own"
+        },
+        {
+          "field": "rubric_evidence.ai.basis",
+          "from": "HYPOTHESIS C-O2-C5: AI hỗ trợ log/runbook nhưng deterministic protocol tests mạnh hơn làm oracle; R14 chứng minh chiều sâu kỹ thuật thường, chưa đo lợi ích AI.",
+          "to": "HYPOTHESIS C-O2-C5 concerns optional log/runbook assistance; core succession is achievable through conventional engineering and governance, with no measured AI lift (Round 2 C-G-C26).",
+          "reason": "Remove implication that a test oracle establishes necessity.",
+          "triggered_by": "own"
+        },
+        {
+          "field": "rubric_evidence.sustainability.basis",
+          "from": "UNKNOWN C-O2-C4 và INFERENCE C-O2-C6: donations chưa kiểm độc lập, không có thu chi; legal grey zone từ R31 https://www.copyright.gov/1201/2024/2024_Section_1201_Registers_Recommendation.pdf chưa được giải quyết.",
+          "to": "UNKNOWN C-O2-C4 remains: N09/N10 report licensed Homecoming revival and donor support, but these do not transfer rights, funding or purchaser demand to a new Pretendo-maintainer succession tool; legal risk for this scope stays high.",
+          "reason": "Acknowledge stronger comparable support while keeping scope-specific commercial uncertainty.",
+          "triggered_by": "B"
+        }
+      ],
+      "merge_with": [
+        "A-O4",
+        "B-O1"
+      ]
+    },
+    {
+      "id": "C-O3",
+      "title": "Giữ ngữ nghĩa quyền và ngữ cảnh khi kho di sản chuyển giao",
+      "dimensions": [
+        "knowledge",
+        "heritage",
+        "user-data-workflows",
+        "content"
+      ],
+      "target_users": [
+        "Cultural protocol stewards dùng Mukurtu",
+        "Archive staff tại đơn vị nhận collection",
+        "Tổ chức giáo dục ngôn ngữ như Kulu Language Institute"
+      ],
+      "regions_with_direct_evidence": [
+        "EU",
+        "Other"
+      ],
+      "demand_type": "mixed",
+      "strongest_alternative": "Mukurtu migration + Local Contexts + PARADISEC offline collections",
+      "strongest_counterevidence": "Mukurtu migration, Local Contexts label exports and PARADISEC offline delivery already cover core stewardship jobs; SOAS/BBAW announced institutional transfer, but Round 2 downgrades C-G-C12 because technical completion is not independently established.",
+      "ai_role": "useful",
+      "legal_risk": "high",
+      "key_claims": [
+        "C-O3-C1",
+        "C-O3-C2",
+        "C-O3-C3",
+        "C-O3-C4",
+        "C-O3-C5",
+        "C-O3-C6"
+      ],
+      "falsifier": "Một archive cho phép kiểm 30 records có restricted access và custom fields; dùng mapping chính thức và hai người có thẩm quyền đối chiếu trước/sau, loại hướng nếu mọi điều kiện quan trọng được giữ và review không tốn lao động đáng kể, dừng nếu không thống nhất người có quyền duyệt.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "INFERENCE C-O3-C1: Ranongga có sử dụng thực và Mukurtu có migration limitations; R22 https://www.paradisec.org.au/blog/2024/02/using-raspberry-pi-in-ranongga/ không chứng minh nhu cầu mua assurance riêng."
+        },
+        "international": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "INFERENCE C-O3-C1/C2: EU có SOAS/BBAW transfer, Oceania có Kulu/PARADISEC; R24/R25/R22; không gộp Oceania vào Asia và chưa xác nhận demand Asia."
+        },
+        "innovation": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "HYPOTHESIS C-O3-C3: docs nêu custom fields ngoài phạm vi stock migration, R17 https://docs.mukurtu.org/migration/PM02Activities/; khoảng trống kiểm semantics có thể có nhưng đối thủ bao phủ core."
+        },
+        "theme": {
+          "provisional_score": 1,
+          "confidence": "M",
+          "basis": "INFERENCE C-O3-C6: chưa có nền tảng công nghệ cụ thể đã chết trong ca được xác nhận; tổ chức đổi nơi chủ trì không tự là Resurrection."
+        },
+        "ai": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "HYPOTHESIS C-O3-C5: useful only as optional flags for human review, never consent or access decisions; deterministic mapping and authorised review remain the baseline, with no measured lift (C-R2-A10/C-G-C26)."
+        },
+        "feasibility": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "INFERENCE C-O3-C6: kiểm mapping có thể giới hạn được, còn phụ thuộc partner và consent chưa có; R17/R18 và R19 https://localcontexts.org/support/working-with-labels/."
+        },
+        "demo": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "HYPOTHESIS C-O3-C3: before/after ai thấy gì có thể kiểm nhưng cần ngữ cảnh văn hóa, chưa có artifact demo đúng quyền."
+        },
+        "sustainability": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "UNKNOWN C-O3-C4: C:R20/R23/R24 show the type of grant and archive pricing, while C-G-C12 is revised to INFERENCE for technical completion; neither programme funding nor transfer announcements establish a buyer for separate migration assurance."
+        }
+      },
+      "status": "revised",
+      "changes": [
+        {
+          "field": "rubric_evidence.ai.provisional_score",
+          "from": "3",
+          "to": "2",
+          "reason": "A-O5 and own review make human cultural authority and explicit access mappings central; no measured lift for AI triage.",
+          "triggered_by": "A"
+        },
+        {
+          "field": "rubric_evidence.ai.basis",
+          "from": "HYPOTHESIS C-O3-C5: AI có thể gắn cờ mapping rủi ro nhưng rules và người có thẩm quyền là baseline/oracle, chưa có benchmark.",
+          "to": "HYPOTHESIS C-O3-C5: useful only as optional flags for human review, never consent or access decisions; deterministic mapping and authorised review remain the baseline, with no measured lift (C-R2-A10/C-G-C26).",
+          "reason": "Keep useful label explicitly conditional rather than a validated contribution.",
+          "triggered_by": "A"
+        },
+        {
+          "field": "strongest_counterevidence",
+          "from": "Protocols, migration, xuất Labels và catalog ngoại tuyến đã có; ELDP/ELAR cũng có tiền lệ đổi chủ trì, nên một kho văn hóa mới dễ lặp công việc.",
+          "to": "Mukurtu migration, Local Contexts label exports and PARADISEC offline delivery already cover core stewardship jobs; SOAS/BBAW announced institutional transfer, but Round 2 downgrades C-G-C12 because technical completion is not independently established.",
+          "reason": "Self-audit separates announced transfer from confirmed completed archive continuity.",
+          "triggered_by": "own"
+        },
+        {
+          "field": "rubric_evidence.sustainability.basis",
+          "from": "UNKNOWN C-O3-C4: có loại funding và bảng giá archive R20/R23/R24 nhưng chưa xác định ngân sách cho kiểm chuyển riêng; R23 https://www.paradisec.org.au/deposit/costing-a-deposit/.",
+          "to": "UNKNOWN C-O3-C4: C:R20/R23/R24 show the type of grant and archive pricing, while C-G-C12 is revised to INFERENCE for technical completion; neither programme funding nor transfer announcements establish a buyer for separate migration assurance.",
+          "reason": "Avoid using a coordinated transfer announcement as proof of completed technical continuity or new-tool purchasing.",
+          "triggered_by": "own"
+        }
+      ],
+      "merge_with": [
+        "A-O5"
+      ]
+    }
+  ]
+}

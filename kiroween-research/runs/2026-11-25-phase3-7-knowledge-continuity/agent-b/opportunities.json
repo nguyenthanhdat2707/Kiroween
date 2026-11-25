@@ -1,0 +1,712 @@
+{
+  "agent": "B",
+  "phase": 3,
+  "model_observed": "claude-sonnet-5-5",
+  "effort_observed": null,
+  "opportunities": [
+    {
+      "id": "B-S2",
+      "space": "S2",
+      "title": "Research apps and databases after funding ends",
+      "verdict": "narrow",
+      "narrowed_scope": "See B-S2a: research/teaching tools killed by officially retired runtimes (Flash, Java applets, Google Fusion Tables)",
+      "target_users": [
+        "university RSE/DH labs holding legacy project estates (e.g. King's Digital Lab)",
+        "core biodata resource operators (FlyBase, TAIR)"
+      ],
+      "payer": "institutional subscriptions (TAIR), private funders (Wellcome), university lab budgets (KDL); none found for a third-party tool",
+      "maintainer": "university RSE/DH labs, spun-out nonprofits (Phoenix Bioinformatics), consortia (Alliance of Genome Resources)",
+      "regions_with_direct_evidence": [
+        "NA",
+        "EU",
+        "Asia"
+      ],
+      "cases": [
+        {
+          "region": "NA",
+          "case": "FlyBase NIH grant terminated May 2025",
+          "refs": [
+            "R5",
+            "R6"
+          ]
+        },
+        {
+          "region": "NA",
+          "case": "TAIR moved to subscriptions after NSF funding ended 2013",
+          "refs": [
+            "R7"
+          ]
+        },
+        {
+          "region": "EU",
+          "case": "King's Digital Lab inherited ~100 legacy DH projects",
+          "refs": [
+            "R2"
+          ]
+        },
+        {
+          "region": "Asia",
+          "case": "PDBj SFAS web service suspended Feb 2024 for lack of IT staff",
+          "refs": [
+            "R9"
+          ]
+        },
+        {
+          "region": "Other",
+          "case": "GBC: 32 of 52 Global Core Biodata Resources US-funded",
+          "refs": [
+            "R4"
+          ]
+        }
+      ],
+      "demand_type": "mixed",
+      "consequence_of_inaction": "Curated core resources lose staff and updates; long-tail tools go dark (~28% of omics tool URLs already unreachable).",
+      "strongest_alternative": "KDL Archiving & Sustainability process plus Endings static-site principles; for large resources, funder rescue and subscription models",
+      "strongest_counterevidence": "Large resources need money, not a new tool, and KDL reports many PIs chose to let finished projects be archived rather than kept running.",
+      "preservation_vs_restoration": "restoration-adds-value",
+      "resurrection_anchor": null,
+      "ai_role": "useful",
+      "legal_risk": "low",
+      "key_claims": [
+        "B-S2-C1",
+        "B-S2-C2",
+        "B-S2-C4",
+        "B-S2-C5",
+        "B-S2-C6",
+        "B-S2-C7",
+        "B-S2-C11"
+      ],
+      "falsifier": "Survey KDL/Endings-style legacy estates: if most projects either archive cleanly or convert static with existing tools at low cost, no gap remains.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Strong behavioural evidence for funding large resources (FlyBase, TAIR, GBC), none that target users want a new solution"
+        },
+        "international": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Direct cases in NA, EU, Asia (SFAS) but Asia evidence is one notice"
+        },
+        "innovation": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "KDL and Endings already cover the core job manually"
+        },
+        "theme": {
+          "provisional_score": 2,
+          "confidence": "M",
+          "basis": "Grant expiry is not a dead technology"
+        },
+        "ai": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "AI optional for code reading; static conversion is deterministic"
+        },
+        "feasibility": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Feasible only on a narrowed slice"
+        },
+        "demo": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Needs domain explanation"
+        },
+        "sustainability": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Services are paid for (TAIR, KDL SLA); tools are not"
+        }
+      }
+    },
+    {
+      "id": "B-S2a",
+      "space": "S2",
+      "title": "Research and teaching tools killed by retired runtimes (Flash, Java applets, Fusion Tables)",
+      "verdict": "continue",
+      "narrowed_scope": "Legacy academic simulations and data apps that stopped working because Flash, Java applets or Google Fusion Tables were retired, held by labs/education projects with legacy estates",
+      "target_users": [
+        "educational simulation projects with legacy sims (e.g. PhET)",
+        "university DH/RSE labs with Flash/applet-era projects"
+      ],
+      "payer": "donations and foundation grants (PhET); lab budgets; none found for a third-party tool",
+      "maintainer": "project teams; emulator communities (Ruffle, CheerpJ vendor Leaning Technologies)",
+      "regions_with_direct_evidence": [
+        "NA"
+      ],
+      "cases": [
+        {
+          "region": "NA",
+          "case": "PhET Flash sims stopped 1 Jan 2021; Java sims via CheerpJ with missing features",
+          "refs": [
+            "R8"
+          ]
+        },
+        {
+          "region": "Other",
+          "case": "Google Fusion Tables discontinued, data deleted after 3 Mar 2020 (global service)",
+          "refs": [
+            "R10"
+          ]
+        }
+      ],
+      "demand_type": "mixed",
+      "consequence_of_inaction": "Interactive research and teaching tools stay unusable or partially working under emulators.",
+      "strongest_alternative": "Ruffle (Flash), CheerpJ (Java applets), manual HTML5 rewrites (PhET)",
+      "strongest_counterevidence": "Mature emulators already run much Flash/applet content; the residual gap for research tools is unmeasured.",
+      "preservation_vs_restoration": "restoration-adds-value",
+      "resurrection_anchor": "Adobe Flash Player (EOL 2020/2021); Java browser applets; Google Fusion Tables (discontinued 2019, data deleted 2020)",
+      "ai_role": "useful",
+      "legal_risk": "low",
+      "key_claims": [
+        "B-S2-C8",
+        "B-S2-C9",
+        "B-S2-C12",
+        "B-S2-C13"
+      ],
+      "falsifier": "Take 20 public academic Flash/Java-applet tools; if >=80% already run fully under Ruffle/CheerpJ or have been rewritten, drop.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "PhET spends donations on conversion; no evidence beyond one organisation"
+        },
+        "international": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "NA case plus a globally retired runtime (structural generalisation)"
+        },
+        "innovation": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "Ruffle/CheerpJ partly cover the job; gap unmeasured"
+        },
+        "theme": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Officially retired runtime directly causes the loss"
+        },
+        "ai": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "AI translation of applet logic plausible, checkable against emulator output; unproven"
+        },
+        "feasibility": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "Open-licensed legacy sims and open emulators available now"
+        },
+        "demo": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "Before/after on a real dead simulation is visual"
+        },
+        "sustainability": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "Donation-dependent"
+        }
+      }
+    },
+    {
+      "id": "B-T2",
+      "space": "T2",
+      "title": "Small-platform shutdown window",
+      "verdict": "drop",
+      "narrowed_scope": null,
+      "target_users": [
+        "operators of small community platforms near shutdown"
+      ],
+      "payer": "none found for small operators; large operators self-fund export (Glitch/Fastly, Yahoo)",
+      "maintainer": "volunteers (ArchiveTeam); receiving platforms build importers in large cases",
+      "regions_with_direct_evidence": [
+        "NA",
+        "Asia"
+      ],
+      "cases": [
+        {
+          "region": "NA",
+          "case": "Cohost shutdown 2024-2025, delayed for ArchiveTeam",
+          "refs": [
+            "R12",
+            "R13"
+          ]
+        },
+        {
+          "region": "NA",
+          "case": "Glitch ended hosting 8 Jul 2025 with code export and redirects",
+          "refs": [
+            "R11"
+          ]
+        },
+        {
+          "region": "Asia",
+          "case": "Yahoo!ブログ closure 2019 with official migration tool to rival blogs (large platform)",
+          "refs": [
+            "R14"
+          ]
+        },
+        {
+          "region": "Asia",
+          "case": "Xiami closure 2021, playlists to NetEase/QQ (large platform)",
+          "refs": [
+            "R15"
+          ]
+        }
+      ],
+      "demand_type": "mixed",
+      "consequence_of_inaction": "Read-only copies usually survive via ArchiveTeam, but community relationships of small platforms are lost.",
+      "strongest_alternative": "ArchiveTeam + Wayback for read-only copies; operator export/redirects; rival importers",
+      "strongest_counterevidence": "Small operators close because they have no money (Cohost $17k/month deficit), so the moment the tool is needed is the moment no one can pay.",
+      "preservation_vs_restoration": "unclear",
+      "resurrection_anchor": null,
+      "ai_role": "unnecessary",
+      "legal_risk": "medium",
+      "key_claims": [
+        "B-T2-C1",
+        "B-T2-C2",
+        "B-T2-C3",
+        "B-T2-C7",
+        "B-T2-C8",
+        "B-T2-C10"
+      ],
+      "falsifier": "Find any small operator or funder that paid for community transfer at shutdown; if none, the drop stands.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Volunteer and operator behaviour demonstrated; no WTP for a tool"
+        },
+        "international": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "NA small cases; Asia only large-platform cases; EU only regulation (snippet)"
+        },
+        "innovation": {
+          "provisional_score": 1,
+          "confidence": "M",
+          "basis": "ArchiveTeam, exports and rival importers cover the core job"
+        },
+        "theme": {
+          "provisional_score": 2,
+          "confidence": "M",
+          "basis": "Defined as before shutdown: prevention, not revival"
+        },
+        "ai": {
+          "provisional_score": 1,
+          "confidence": "M",
+          "basis": "Crawl/export need no AI"
+        },
+        "feasibility": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Technically simple; real data access is the risk"
+        },
+        "demo": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Story clear but demo needs a cooperating platform"
+        },
+        "sustainability": {
+          "provisional_score": 1,
+          "confidence": "M",
+          "basis": "No payer at shutdown"
+        }
+      }
+    },
+    {
+      "id": "B-T3",
+      "space": "T3",
+      "title": "Disappearing small and scholar-led journals",
+      "verdict": "narrow",
+      "narrowed_scope": "See B-T3a; T3 as a whole fails the theme gate",
+      "target_users": [
+        "editors of small scholar-led OA journals"
+      ],
+      "payer": "preservation networks and libraries (CLOCKSS, IA, DOAJ, PKP) absorb costs; journals pay nothing",
+      "maintainer": "CLOCKSS, Portico, PKP PN, Internet Archive, DOAJ (JASPER)",
+      "regions_with_direct_evidence": [
+        "NA",
+        "EU",
+        "Asia",
+        "Other"
+      ],
+      "cases": [
+        {
+          "region": "NA",
+          "case": "57 of 174 vanished OA journals (Laakso et al.)",
+          "refs": [
+            "R18"
+          ]
+        },
+        {
+          "region": "EU",
+          "case": "52 vanished journals in Europe & Central Asia",
+          "refs": [
+            "R18"
+          ]
+        },
+        {
+          "region": "Asia",
+          "case": "23 South Asia + 18 East Asia & Pacific vanished; Indonesia LIS rescue project (snippet)",
+          "refs": [
+            "R18",
+            "R23"
+          ]
+        },
+        {
+          "region": "Other",
+          "case": "17 Latin America & Caribbean; 6 MENA",
+          "refs": [
+            "R18"
+          ]
+        }
+      ],
+      "demand_type": "mixed",
+      "consequence_of_inaction": "About 28% of DOI-registered articles remain without confirmed preservation, risking broken citation chains.",
+      "strongest_alternative": "Project JASPER + PKP Preservation Network + CLOCKSS (free for eligible small journals)",
+      "strongest_counterevidence": "Free infrastructure exists and uptake is still low (~100 invited, 32 preserved), so the bottleneck is participation, not technology.",
+      "preservation_vs_restoration": "preservation-sufficient",
+      "resurrection_anchor": null,
+      "ai_role": "unnecessary",
+      "legal_risk": "low",
+      "key_claims": [
+        "B-T3-C1",
+        "B-T3-C2",
+        "B-T3-C5",
+        "B-T3-C7"
+      ],
+      "falsifier": "Already largely falsified as a tooling gap by JASPER uptake data; would revive only if a non-participation cause solvable by tooling were shown.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 3,
+          "confidence": "H",
+          "basis": "Strong secondary quantitative evidence (Laakso, Eve); no evidence journals want a new tool"
+        },
+        "international": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "All regions in one dataset; per-region independent evidence thinner"
+        },
+        "innovation": {
+          "provisional_score": 1,
+          "confidence": "H",
+          "basis": "JASPER, PKP PN, CLOCKSS cover the core job"
+        },
+        "theme": {
+          "provisional_score": 1,
+          "confidence": "H",
+          "basis": "Journals are not a dead technology"
+        },
+        "ai": {
+          "provisional_score": 1,
+          "confidence": "M",
+          "basis": "Participation problem; AI not needed"
+        },
+        "feasibility": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Feasible but low value"
+        },
+        "demo": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "Invisible on screen"
+        },
+        "sustainability": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Institutional preservation networks are funded"
+        }
+      }
+    },
+    {
+      "id": "B-T3a",
+      "space": "T3",
+      "title": "Journals stranded on end-of-life OJS 2.x or surviving only in web archives",
+      "verdict": "narrow",
+      "narrowed_scope": "Conditional: only if a count shows a material number of active journals still on OJS 2.x (excluded from PKP PN) or vanished journals recoverable from Wayback captures; otherwise drop",
+      "target_users": [
+        "editors of journals still running OJS 2.x",
+        "librarians reconstructing vanished journals"
+      ],
+      "payer": "none found",
+      "maintainer": "none found beyond PKP upgrade documentation",
+      "regions_with_direct_evidence": [
+        "Asia"
+      ],
+      "cases": [
+        {
+          "region": "Asia",
+          "case": "Indonesia LIS journal rescue project (snippet only)",
+          "refs": [
+            "R23"
+          ]
+        },
+        {
+          "region": "Other",
+          "case": "OJS 2.x officially unsupported since 2021 (global software)",
+          "refs": [
+            "R21"
+          ]
+        }
+      ],
+      "demand_type": "hypothetical",
+      "consequence_of_inaction": "Journals on OJS 2.x stay unpatched and outside free preservation networks.",
+      "strongest_alternative": "PKP OJS 2-to-3 upgrade path; Internet Archive Scholar",
+      "strongest_counterevidence": "OJS 2.x is not the main reason journals vanish; Laakso and JASPER point to resources and awareness.",
+      "preservation_vs_restoration": "unclear",
+      "resurrection_anchor": "Open Journal Systems 2.x (EOL 2021 per PKP)",
+      "ai_role": "useful",
+      "legal_risk": "low",
+      "key_claims": [
+        "B-T3-C3",
+        "B-T3-C4",
+        "B-T3-C8",
+        "B-T3-C9",
+        "B-T3-C10"
+      ],
+      "falsifier": "Count active OJS 2.x journals (version footers/PKP statistics); if fewer than a few hundred or most already in Keepers Registry, drop.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "Only a snippet-level rescue project"
+        },
+        "international": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "OJS is deployed globally; structural generalisation only"
+        },
+        "innovation": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "PKP upgrade path and IA Scholar partly cover"
+        },
+        "theme": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "Retired tech exists but is not central to the loss; 3 would be a stretch"
+        },
+        "ai": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Metadata extraction from heterogeneous archives; GROBID baseline"
+        },
+        "feasibility": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Needs a real OJS 2.x instance or Wayback capture"
+        },
+        "demo": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Requires explanation of scholarly preservation"
+        },
+        "sustainability": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "No payer"
+        }
+      }
+    },
+    {
+      "id": "B-T4",
+      "space": "T4",
+      "title": "Heritage archive transfer when custodians cannot maintain",
+      "verdict": "narrow",
+      "narrowed_scope": "See B-T4a; T4 as a whole fails the theme gate",
+      "target_users": [
+        "Indigenous and community archives",
+        "language documentation archives"
+      ],
+      "payer": "foundations and agencies (Arcadia, Mellon, IMLS, NEH)",
+      "maintainer": "WSU Mukurtu team; institutional archives (BBAW for ELAR); communities",
+      "regions_with_direct_evidence": [
+        "NA",
+        "EU",
+        "Other"
+      ],
+      "cases": [
+        {
+          "region": "NA",
+          "case": "Indigenous digital heritage projects 2002-2007 hit by outdated software and funding problems",
+          "refs": [
+            "R30"
+          ]
+        },
+        {
+          "region": "EU",
+          "case": "ELDP/ELAR moved from SOAS London to BBAW Berlin with Arcadia grant (2021)",
+          "refs": [
+            "R29"
+          ]
+        },
+        {
+          "region": "Other",
+          "case": "Mukurtu origins with Warumungu community, Australia",
+          "refs": [
+            "R30",
+            "R31"
+          ]
+        },
+        {
+          "region": "Asia",
+          "case": "No protocol-governed archive case found; Hong Kong collection.news case is political (snippet)",
+          "refs": []
+        }
+      ],
+      "demand_type": "demonstrated",
+      "consequence_of_inaction": "Community archives run on unsupported software or lose cultural access rules when moved.",
+      "strongest_alternative": "Mukurtu 4 with official migration tool; transfer to established archives (ELAR, PARADISEC)",
+      "strongest_counterevidence": "The bottleneck may be governance and staffing, and a public copy would violate cultural protocols, so generic preservation is harmful here.",
+      "preservation_vs_restoration": "restoration-adds-value",
+      "resurrection_anchor": null,
+      "ai_role": "unnecessary",
+      "legal_risk": "high",
+      "key_claims": [
+        "B-T4-C1",
+        "B-T4-C3",
+        "B-T4-C4",
+        "B-T4-C6",
+        "B-T4-C7"
+      ],
+      "falsifier": "If most custodian transitions are handled by funders moving collections to institutional archives (ELAR model), no tooling gap exists.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Funders spend (Arcadia EUR 21M); no evidence for a new tool"
+        },
+        "international": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "NA, EU, Oceania; no Asia protocol case"
+        },
+        "innovation": {
+          "provisional_score": 1,
+          "confidence": "M",
+          "basis": "Mukurtu and institutional archives cover the core job"
+        },
+        "theme": {
+          "provisional_score": 1,
+          "confidence": "H",
+          "basis": "Heritage is not a dead technology"
+        },
+        "ai": {
+          "provisional_score": 1,
+          "confidence": "M",
+          "basis": "AI risky with restricted content"
+        },
+        "feasibility": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "Real data cannot be used"
+        },
+        "demo": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "Synthetic data required"
+        },
+        "sustainability": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Grant-funded ecosystem exists"
+        }
+      }
+    },
+    {
+      "id": "B-T4a",
+      "space": "T4",
+      "title": "Community archives stranded on Mukurtu 3 / Drupal 7",
+      "verdict": "continue",
+      "narrowed_scope": "Customised Mukurtu 3 sites (Drupal 7, no longer supported) that the official stock-site migration tool does not cover, where cultural-protocol access rules must survive the move to Mukurtu 4",
+      "target_users": [
+        "communities running customised Mukurtu 3 sites",
+        "WSU Mukurtu support team"
+      ],
+      "payer": "Mukurtu team already pays HeroDevs for Drupal 7 extended security support; foundations fund Mukurtu; none found for a third-party tool",
+      "maintainer": "WSU Mukurtu team",
+      "regions_with_direct_evidence": [
+        "NA",
+        "Other"
+      ],
+      "cases": [
+        {
+          "region": "NA",
+          "case": "Mukurtu 3 on Drupal 7; HeroDevs contract ~1 year after Mukurtu 4; migration tool designed for stock sites",
+          "refs": [
+            "R26"
+          ]
+        },
+        {
+          "region": "Other",
+          "case": "Mukurtu deployments in Australia (Warumungu origin)",
+          "refs": [
+            "R30",
+            "R31"
+          ]
+        }
+      ],
+      "demand_type": "mixed",
+      "consequence_of_inaction": "Customised sites keep running unpatched Drupal 7 after extended support ends, risking exposure of restricted cultural content.",
+      "strongest_alternative": "Official Mukurtu 4 migration tool plus direct support from the Mukurtu team",
+      "strongest_counterevidence": "The number of customised Mukurtu 3 sites is unknown and may be small, and the funded Mukurtu team already offers custom migration help.",
+      "preservation_vs_restoration": "restoration-adds-value",
+      "resurrection_anchor": "Drupal 7 (security support ended; per Drupal.org 5 Jan 2025, snippet) and Mukurtu CMS 3 (superseded by Mukurtu 4)",
+      "ai_role": "useful",
+      "legal_risk": "high",
+      "key_claims": [
+        "B-T4-C1",
+        "B-T4-C2",
+        "B-T4-C8",
+        "B-T4-C9",
+        "B-T4-C10"
+      ],
+      "falsifier": "Count public Mukurtu 3 sites still live and ask the Mukurtu team what share need custom migration; if the official tool plus team support covers nearly all, drop.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "Spending by the vendor (HeroDevs) demonstrated; community demand for an extra tool unknown"
+        },
+        "international": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "NA and Australia only"
+        },
+        "innovation": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "Official tool covers stock sites; custom-site gap plausible but unmeasured"
+        },
+        "theme": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Officially retired Drupal 7 directly forces the migration"
+        },
+        "ai": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "Access-matrix check is deterministic; AI only for reading custom modules"
+        },
+        "feasibility": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Requires building a synthetic Mukurtu 3 site"
+        },
+        "demo": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Before/after access matrix is visual but needs context"
+        },
+        "sustainability": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "Grant-dependent ecosystem; legal/ethical constraints high"
+        }
+      }
+    }
+  ]
+}

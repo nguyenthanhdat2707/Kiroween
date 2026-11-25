@@ -1,0 +1,435 @@
+{
+  "agent": "A",
+  "phase": 3,
+  "model_observed": "Gemini 4 Neon (Medium)",
+  "effort_observed": "medium",
+  "opportunities": [
+    {
+      "id": "A-S2",
+      "space": "S2",
+      "title": "Post-grant survival of academic research web apps",
+      "verdict": "narrow",
+      "narrowed_scope": "A-S2a: Static/WASM archival revival of lightweight Digital Humanities and data-explorer research web apps built on officially retired runtimes (e.g., Python 2, PHP 5/7, Flash/Java Applets), targeting university digital scholarship labs and research libraries.",
+      "target_users": [
+        "University digital scholarship labs (e.g., King's Digital Lab, UVic Endings)",
+        "Academic research libraries and Research Technical Professionals (RTPs)"
+      ],
+      "payer": "University libraries, digital scholarship labs, and research infrastructure grants (via project SLAs or institutional budgets; no proven standalone commercial tool buyer)",
+      "maintainer": "Research Technical Professionals (RTPs), university library IT, or OSS academic consortia",
+      "regions_with_direct_evidence": [
+        "NA",
+        "EU",
+        "Asia"
+      ],
+      "cases": [
+        {
+          "region": "NA",
+          "case": "Project Endings (University of Victoria, Canada)",
+          "refs": [
+            "R1"
+          ]
+        },
+        {
+          "region": "EU",
+          "case": "King's Digital Lab legacy estates & ELIXIR Tools Platform",
+          "refs": [
+            "R2",
+            "R4"
+          ]
+        },
+        {
+          "region": "Asia",
+          "case": "NBDC Life Science Database Archive (89 archived databases, Japan)",
+          "refs": [
+            "R3"
+          ]
+        }
+      ],
+      "demand_type": "demonstrated",
+      "consequence_of_inaction": "Published scientific tools and interactive research datasets break after 2-5 year grant cycles end, causing citation link rot and loss of non-programmer usability.",
+      "strongest_alternative": "Project Endings static principles + Webrecorder/Browsertrix + NBDC/Zenodo dataset archiving",
+      "strongest_counterevidence": "Wren et al. (2017) suggests highly cited bioinformatics tools mostly survive on their own, while heavy server-side compute apps cannot be staticized without losing core functionality.",
+      "preservation_vs_restoration": "restoration-adds-value",
+      "resurrection_anchor": "Officially retired web runtimes (Python 2, PHP 5/7, Flash/Java Applets) only when narrowed to A-S2a; none for generic S2",
+      "ai_role": "useful",
+      "legal_risk": "low",
+      "key_claims": [
+        "A-S2-C1",
+        "A-S2-C2",
+        "A-S2-C3",
+        "A-S2-C5",
+        "A-S2-C7",
+        "A-S2-C9",
+        "A-S2-C10"
+      ],
+      "falsifier": "Sample 20 open-source DH/bioinformatics web apps past funding and measure what fraction can be converted to static/WASM without losing core query functionality (Task B H8); kill if <30% succeed or deterministic static crawlers match.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "Direct institutional activity in NA (UVic), EU (KDL 2026), and Asia (NBDC 89 DBs), though no direct evidence of WTP for a new standalone software tool."
+        },
+        "international": {
+          "provisional_score": 5,
+          "confidence": "H",
+          "basis": "Directly verified primary cases in 3 regions (NA, EU, Asia) with named institutional actors and low cross-border legal friction for OSS academic projects."
+        },
+        "innovation": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Plausible gap between raw data dumps (NBDC/Zenodo) and manual static rebuilds (Project Endings), though Browsertrix/Webrecorder partly covers read-only replay."
+        },
+        "theme": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Reaches 3 only when narrowed (A-S2a) to apps stranded on officially retired runtimes; generic post-grant maintenance would score 2."
+        },
+        "ai": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "Hypothesized value in migrating undocumented legacy codebases to static/WASM with regression tests, but unproven against conventional refactoring."
+        },
+        "feasibility": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "A scoped prototype converting real open-source legacy research web apps to static/WASM is achievable within 7 days using public academic repos."
+        },
+        "demo": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "Clear before/after demo showing a broken legacy research app running serverless in a browser, though requires brief academic context."
+        },
+        "sustainability": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Plausible OSS/institutional model backed by university library budgets and grant afterlife clauses, but no verified commercial software buyer."
+        }
+      }
+    },
+    {
+      "id": "A-T2",
+      "space": "T2",
+      "title": "Pre-shutdown semantic asset transfer for small platforms",
+      "verdict": "narrow",
+      "narrowed_scope": "A-T2a: Pre-shutdown export-to-portable-archive and migration bridge for small community/creator platforms (e.g., Cohost, Glitch, Ameba Ownd) whose native exports drop embedded media, thread structure, or links.",
+      "target_users": [
+        "Volunteer web archivists (e.g., ArchiveTeam)",
+        "Departing small-platform operators during sunset windows",
+        "Affected creators and niche community admins migrating off dying platforms"
+      ],
+      "payer": "none found",
+      "maintainer": "Open-source preservation communities or non-profit archiving organizations (e.g., Internet Archive / Webrecorder ecosystem)",
+      "regions_with_direct_evidence": [
+        "NA",
+        "EU",
+        "Asia"
+      ],
+      "cases": [
+        {
+          "region": "NA",
+          "case": "Glitch hosting shutdown (July 2025) & Cohost shutdown (Jan 2025)",
+          "refs": [
+            "R8",
+            "R9",
+            "R10"
+          ]
+        },
+        {
+          "region": "EU",
+          "case": "EU Data Act cloud switching framework (applicable Sept 2025)",
+          "refs": [
+            "R11"
+          ]
+        },
+        {
+          "region": "Asia",
+          "case": "Ameba Ownd service termination & image-URL-only export (Japan, 2026)",
+          "refs": [
+            "R13",
+            "R27"
+          ]
+        }
+      ],
+      "demand_type": "mixed",
+      "consequence_of_inaction": "Community posts, embedded media, small web projects, and inbound links vanish or degrade into unusable raw dumps once sunset windows close.",
+      "strongest_alternative": "Native platform exports + ArchiveTeam/Wayback Machine + Webrecorder/Browsertrix + competitor importers",
+      "strongest_counterevidence": "Dying operators have zero budget (Cohost ~$17k/mo deficit), living SaaS competitors build their own importers (Glitch), and DTI/DTP does not create WTP for insolvent shutdown tools.",
+      "preservation_vs_restoration": "restoration-adds-value",
+      "resurrection_anchor": "Officially discontinued small platforms and web hosts (e.g., Cohost, Glitch, Ameba Ownd)",
+      "ai_role": "unnecessary",
+      "legal_risk": "medium",
+      "key_claims": [
+        "A-T2-C1",
+        "A-T2-C2",
+        "A-T2-C3",
+        "A-T2-C5",
+        "A-T2-C6",
+        "A-T2-C8"
+      ],
+      "falsifier": "Inspect 3-5 real shutdown exports (Cohost, Glitch, Ameba Ownd, one undocumented SaaS) and compare hand-written parsers vs AI schema inference (Task B H2); kill if deterministic parsers match or semantic loss is minor.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "Strong 2025-2026 behavioral rescue evidence (Glitch redirects, ArchiveTeam Cohost/Glitch grabs, Ameba Ownd exports), but zero evidence of willingness to pay for a new tool."
+        },
+        "international": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "Direct NA cases (Glitch, Cohost), EU regulatory context (Data Act), and Asian case (Ameba Ownd, snippet-only details); GDPR/privacy rules add cross-border constraints."
+        },
+        "innovation": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Gaps exist in native exports (e.g., missing media files, flat JSON), but ArchiveTeam, Webrecorder, and competitor importers already cover substantial parts of the job."
+        },
+        "theme": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Officially shut-down platforms (Cohost, Glitch, Ameba Ownd) anchor a revived portable archive/migration workflow."
+        },
+        "ai": {
+          "provisional_score": 2,
+          "confidence": "M",
+          "basis": "Deterministic parsers suffice for structured exports; AI schema mapping for messy exports is unproven and likely replaceable."
+        },
+        "feasibility": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "Feasible within 7 days using legally owned sample exports (e.g., user-owned Glitch/Mastodon/blog export files)."
+        },
+        "demo": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "Clear before/after demo turning a dead platform's raw broken export into a searchable, media-intact local archive."
+        },
+        "sustainability": {
+          "provisional_score": 2,
+          "confidence": "H",
+          "basis": "No payer found: bankrupt operators have no funds, one-off users resist paying, and third-party scraping carries GDPR/consent friction."
+        }
+      }
+    },
+    {
+      "id": "A-T3",
+      "space": "T3",
+      "title": "Preserving disappearing small academic journals",
+      "verdict": "drop",
+      "narrowed_scope": null,
+      "target_users": [
+        "Editors of small Diamond Open Access journals",
+        "Academic libraries and scholarly preservation consortia"
+      ],
+      "payer": "Academic libraries, national science agencies (JST), and non-profit donors (already funding PKP PN, CLOCKSS, Portico, J-STAGE, SciELO, AJOL)",
+      "maintainer": "Established scholarly preservation consortia (PKP, CLOCKSS, Portico, DOAJ, ISSN)",
+      "regions_with_direct_evidence": [
+        "NA",
+        "EU",
+        "Asia",
+        "Other"
+      ],
+      "cases": [
+        {
+          "region": "EU",
+          "case": "Laakso et al. (174 vanished OA journals) & DOAJ Project JASPER",
+          "refs": [
+            "R14",
+            "R15"
+          ]
+        },
+        {
+          "region": "NA",
+          "case": "PKP Preservation Network & Portico (235 trigger events)",
+          "refs": [
+            "R16",
+            "R20"
+          ]
+        },
+        {
+          "region": "Asia",
+          "case": "J-STAGE (JST, Japan)",
+          "refs": [
+            "R21"
+          ]
+        },
+        {
+          "region": "Other",
+          "case": "SciELO (Latin America) & AJOL (Africa)",
+          "refs": [
+            "R22",
+            "R23"
+          ]
+        }
+      ],
+      "demand_type": "demonstrated",
+      "consequence_of_inaction": "Peer-reviewed regional and Diamond OA research disappears permanently from the scholarly record when small publishers lose funding or domain control.",
+      "strongest_alternative": "PKP Preservation Network (free for OJS) + Project JASPER + CLOCKSS + Portico + J-STAGE/SciELO/AJOL",
+      "strongest_counterevidence": "Free and institutional preservation infrastructure already exists (PKP PN, JASPER, Portico); the bottleneck is editorial awareness/enrollment, not missing software, and journals are not a dead technology.",
+      "preservation_vs_restoration": "preservation-sufficient",
+      "resurrection_anchor": null,
+      "ai_role": "unnecessary",
+      "legal_risk": "low",
+      "key_claims": [
+        "A-T3-C1",
+        "A-T3-C2",
+        "A-T3-C3",
+        "A-T3-C4",
+        "A-T3-C5",
+        "A-T3-C6",
+        "A-T3-C7"
+      ],
+      "falsifier": "Audit manifests of small journals transferred via PKP PN or JASPER (Task B H3); already fails Kiroween Resurrection theme gate regardless of manifest completeness.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 4,
+          "confidence": "H",
+          "basis": "Strong quantitative evidence (174 vanished OA journals, 235 Portico triggers, 1,318 member libraries), but demand is for enrollment in existing archives, not a new tool."
+        },
+        "international": {
+          "provisional_score": 5,
+          "confidence": "H",
+          "basis": "Directly verified primary evidence across NA, EU, Asia (J-STAGE), Latin America (SciELO), and Africa (AJOL)."
+        },
+        "innovation": {
+          "provisional_score": 1,
+          "confidence": "H",
+          "basis": "Mature free and institutional alternatives (PKP PN, JASPER, CLOCKSS, Portico) already cover the core preservation job."
+        },
+        "theme": {
+          "provisional_score": 1,
+          "confidence": "H",
+          "basis": "Fails gate (<3): scholarly journals are not a dead technology, and stretching OJS 2.x EOL (2021) does not address the primary cause of journal disappearance."
+        },
+        "ai": {
+          "provisional_score": 1,
+          "confidence": "H",
+          "basis": "OAI-PMH harvesting, BagIt/LOCKSS packaging, and checksum verification are deterministic; AI adds no load-bearing value."
+        },
+        "feasibility": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "Technically buildable, but integrating into trusted scholarly registries (Keepers/CLOCKSS) is an organizational barrier."
+        },
+        "demo": {
+          "provisional_score": 2,
+          "confidence": "M",
+          "basis": "Archiving PDFs/XML is visually static and hard to distinguish from existing tools in a 3-minute demo."
+        },
+        "sustainability": {
+          "provisional_score": 2,
+          "confidence": "M",
+          "basis": "Institutional budgets already flow to incumbent consortia (Portico, CLOCKSS, PKP); a new entrant lacks a funding path."
+        }
+      }
+    },
+    {
+      "id": "A-T4",
+      "space": "T4",
+      "title": "Preserving and transferring digital heritage archives",
+      "verdict": "drop",
+      "narrowed_scope": null,
+      "target_users": [
+        "Indigenous and community archive stewards (e.g., Mukurtu users, Kulu Language Institute)",
+        "University and national heritage archive custodians (e.g., ELAR/BBAW, PARADISEC, Islandora libraries)"
+      ],
+      "payer": "Philanthropic foundations (e.g., Arcadia Fund), university libraries, and national cultural agencies",
+      "maintainer": "Funded academic stewardship centers (WSU CDSC, BBAW, PARADISEC) and trained community archivists",
+      "regions_with_direct_evidence": [
+        "NA",
+        "EU",
+        "Asia",
+        "Other"
+      ],
+      "cases": [
+        {
+          "region": "NA",
+          "case": "Mukurtu CMS (WSU CDSC) & Islandora Foundation",
+          "refs": [
+            "R24",
+            "R34"
+          ]
+        },
+        {
+          "region": "EU",
+          "case": "ELAR transfer from SOAS London to BBAW Berlin (2021)",
+          "refs": [
+            "R30"
+          ]
+        },
+        {
+          "region": "Asia",
+          "case": "National Diet Library WARP (Japan)",
+          "refs": [
+            "R33"
+          ]
+        },
+        {
+          "region": "Other",
+          "case": "Kulu Language Institute (Ranongga, Solomon Islands)",
+          "refs": [
+            "R31"
+          ]
+        }
+      ],
+      "demand_type": "demonstrated",
+      "consequence_of_inaction": "Endangered cultural/language collections risk permanent loss, security compromise on EOL CMS stacks, or loss of Indigenous access-control protocols during custody transfers.",
+      "strongest_alternative": "Mukurtu 4 official migration workflow + Mukurtu Hosting ($350 base) + Islandora + ELAR/PARADISEC",
+      "strongest_counterevidence": "Core bottleneck is community governance, consent, and institutional funding rather than missing software; even the Drupal 7 EOL (Jan 2025) angle is routine CMS replatforming to Mukurtu 4 (Drupal 11), not Resurrection.",
+      "preservation_vs_restoration": "restoration-adds-value",
+      "resurrection_anchor": null,
+      "ai_role": "unnecessary",
+      "legal_risk": "high",
+      "key_claims": [
+        "A-T4-C1",
+        "A-T4-C2",
+        "A-T4-C3",
+        "A-T4-C4",
+        "A-T4-C5",
+        "A-T4-C6"
+      ],
+      "falsifier": "Run a real Mukurtu 3 to Mukurtu 4 migration with custom Cultural Protocols (Task B H4); already fails Kiroween Resurrection theme gate and cannot be ethically demoed with real community data before Dec 4, 2026.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "Documented transfers (ELAR SOAS->BBAW) and active Mukurtu 3->4 migration workflows post-Drupal 7 EOL, though bottleneck is governance/staffing."
+        },
+        "international": {
+          "provisional_score": 4,
+          "confidence": "M",
+          "basis": "Evidence across NA, EU, Asia (NDL WARP), and Pacific (Kulu/PARADISEC), but strong local legal and Indigenous data sovereignty boundaries apply."
+        },
+        "innovation": {
+          "provisional_score": 2,
+          "confidence": "M",
+          "basis": "Mukurtu 4 already provides Cultural Protocols, TK Labels, and official Mukurtu 3 migration docs; gap is mostly staffing and custom-site migration."
+        },
+        "theme": {
+          "provisional_score": 1,
+          "confidence": "H",
+          "basis": "Fails gate (<3): heritage custody transfer is not a dead technology; even narrowing to Drupal 7 EOL (Jan 2025) is standard CMS migration (at most 2)."
+        },
+        "ai": {
+          "provisional_score": 1,
+          "confidence": "H",
+          "basis": "Access-control and Cultural Protocol migration must be 100% deterministic; probabilistic AI risks irreversible cultural/privacy leaks."
+        },
+        "feasibility": {
+          "provisional_score": 1,
+          "confidence": "H",
+          "basis": "Validating and publicly demoing real cultural protocol migrations requires community partner consent unattainable within hackathon timeline."
+        },
+        "demo": {
+          "provisional_score": 2,
+          "confidence": "M",
+          "basis": "Synthetic heritage data weakens storytelling and requires heavy domain explanation."
+        },
+        "sustainability": {
+          "provisional_score": 2,
+          "confidence": "M",
+          "basis": "Relies on philanthropic grants and carries high legal/ethical sovereignty risks if operated by an outside toolmaker."
+        }
+      }
+    }
+  ]
+}

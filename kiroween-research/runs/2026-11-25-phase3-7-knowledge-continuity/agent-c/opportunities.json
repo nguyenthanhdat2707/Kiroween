@@ -1,0 +1,526 @@
+{
+  "agent": "C",
+  "phase": 3,
+  "model_observed": null,
+  "effort_observed": null,
+  "opportunities": [
+    {
+      "id": "C-S2",
+      "space": "S2",
+      "title": "Bàn giao chức năng nghiên cứu còn dùng sau grant",
+      "verdict": "narrow",
+      "narrowed_scope": "Tài nguyên có nhu cầu chức năng cụ thể, quyền chuyển và chủ thể nhận; BA tiếp tục nhưng chưa qua Resurrection gate",
+      "target_users": [
+        "PI/maintainer tài nguyên nghiên cứu sắp hết grant",
+        "Research software engineer hoặc thư viện nhận bàn giao"
+      ],
+      "payer": "TAIR/KEGG cho thấy cộng đồng trả để duy trì tài nguyên; none found cho công cụ continuity mới",
+      "maintainer": "Nhóm đại học hoặc nonprofit kế nhiệm; TAIR/BAR là ca đã có",
+      "regions_with_direct_evidence": [
+        "NA",
+        "EU",
+        "Asia"
+      ],
+      "cases": [
+        {
+          "region": "NA",
+          "case": "Araport chuyển JBrowse/ThaleMine sang TAIR và BAR Toronto",
+          "refs": [
+            "R1"
+          ]
+        },
+        {
+          "region": "EU",
+          "case": "AHDS History đóng và HDS/UK Data Archive nhận tiếp",
+          "refs": [
+            "R5",
+            "R6"
+          ]
+        },
+        {
+          "region": "Asia",
+          "case": "KEGG Nhật chuyển funding FTP; không phải shutdown",
+          "refs": [
+            "R3",
+            "R4"
+          ]
+        }
+      ],
+      "demand_type": "mixed",
+      "consequence_of_inaction": "Chức năng truy vấn hoặc track có thể ngừng dùng dù dữ liệu/code vẫn được lưu.",
+      "strongest_alternative": "Bàn giao có chọn lọc cho TAIR/BAR; Zenodo cho file và Browsertrix cho replay web",
+      "strongest_counterevidence": "Các ca nổi bật đã có người nhận hoặc subscription; chưa chứng minh thiếu công cụ tĩnh hóa và công nghệ retired trung tâm.",
+      "preservation_vs_restoration": "restoration-adds-value",
+      "resurrection_anchor": null,
+      "ai_role": "useful",
+      "legal_risk": "medium",
+      "key_claims": [
+        "C-S2-C1",
+        "C-S2-C5",
+        "C-S2-C8",
+        "C-S2-C13",
+        "C-S2-C14",
+        "C-S2-C15"
+      ],
+      "falsifier": "Kiểm tra một nhóm ca đủ quyền và có nhu cầu: dừng nếu chuyển host/công cụ hiện có giữ đủ chức năng hoặc không ai cần runtime; chưa thực hiện.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "INFERENCE C-S2-C7: có hành vi bàn giao/subscription, thiếu current direct demand cho công cụ mới."
+        },
+        "international": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "VERIFIED scoped C-S2-C3/C4/C6: ca NA/EU/Asia nhưng khác mô hình và chưa chứng minh không có legal barrier."
+        },
+        "innovation": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "INFERENCE C-S2-C9: institutional handoff/Zenodo/Browsertrix đã phủ phần lớn công việc; gap chưa đo."
+        },
+        "theme": {
+          "provisional_score": 1,
+          "confidence": "M",
+          "basis": "INFERENCE C-S2-C14: funding hết không phải technology retirement; chưa có mỏ neo đáp ứng anchor."
+        },
+        "ai": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "HYPOTHESIS C-S2-C12: AI phụ trợ; technical continuity có chiều sâu nhưng chưa benchmark."
+        },
+        "feasibility": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "UNKNOWN C-S2-C5: chưa có artifact hợp pháp, test oracle và người nhận trong tay."
+        },
+        "demo": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "INFERENCE C-S2-C13: before/after functional có thể rõ nhưng chưa có artifact demo được phép."
+        },
+        "sustainability": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "INFERENCE C-S2-C11: resource subscriptions có thật; tài trợ công cụ mới chưa xác nhận."
+        }
+      }
+    },
+    {
+      "id": "C-T2",
+      "space": "T2",
+      "title": "Tài sản và chức năng cộng đồng trong cửa sổ shutdown",
+      "verdict": "narrow",
+      "narrowed_scope": "Tài sản có chủ hợp pháp và chủ thể nhận; Glitch là ca retirement để kiểm tra, chưa coi migration đơn thuần là Resurrection",
+      "target_users": [
+        "Chủ ứng dụng Glitch còn cần chạy",
+        "Operator nền tảng cộng đồng trước ngày tắt",
+        "Archivist có hợp tác operator"
+      ],
+      "payer": "none found cho công cụ shutdown-window; công người dùng/archivist được ghi nhận",
+      "maintainer": "Chủ app hoặc host kế nhiệm cho runtime; archivist cho bản lưu",
+      "regions_with_direct_evidence": [
+        "NA",
+        "EU",
+        "Asia"
+      ],
+      "cases": [
+        {
+          "region": "NA",
+          "case": "Glitch 2025: export/redirect và người dùng rehost chọn lọc",
+          "refs": [
+            "R8",
+            "R9"
+          ]
+        },
+        {
+          "region": "NA",
+          "case": "Cohost 2024–2025: operator hợp tác ArchiveTeam",
+          "refs": [
+            "R10",
+            "R11"
+          ]
+        },
+        {
+          "region": "EU",
+          "case": "Soup.io Vienna: succession và cứu một phần",
+          "refs": [
+            "R12",
+            "R13"
+          ]
+        },
+        {
+          "region": "Asia",
+          "case": "teacup Nhật đóng 2022; blogger chuyển nhiều lần",
+          "refs": [
+            "R14",
+            "R16"
+          ]
+        }
+      ],
+      "demand_type": "mixed",
+      "consequence_of_inaction": "Sau deadline có thể mất quyền lấy dữ liệu, URL và khả năng chạy app; archive không giữ một cộng đồng sống.",
+      "strongest_alternative": "Export/redirect gốc + host mới; ArchiveTeam/Browsertrix; Mastodon và DTP cho phạm vi hỗ trợ",
+      "strongest_counterevidence": "Có thể migrate bằng hạ tầng hiện có; Glitch/GMO không chứng minh thị trường operator SaaS nhỏ và WTP chưa thấy.",
+      "preservation_vs_restoration": "restoration-adds-value",
+      "resurrection_anchor": "Glitch project hosting retired theo thông báo 2025; chỉ có giá trị theme nếu khả năng tạo/chạy app gắn nền tảng này thật sự được hồi sinh",
+      "ai_role": "useful",
+      "legal_risk": "high",
+      "key_claims": [
+        "C-T2-C1",
+        "C-T2-C3",
+        "C-T2-C4",
+        "C-T2-C8",
+        "C-T2-C11",
+        "C-T2-C14",
+        "C-T2-C15"
+      ],
+      "falsifier": "Đối chiếu một export được phép dùng với công việc chủ tài sản cần; dừng nếu export chính thức + host nhận đã đủ hoặc không có payer/maintainer; chưa thực hiện.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "INFERENCE C-T2-C7: hành vi rescue/migration demonstrated, không có direct demand cho công cụ mới."
+        },
+        "international": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "VERIFIED scoped C-T2-C3–C6: có ca ba vùng, nhưng target small operator chưa nhất quán."
+        },
+        "innovation": {
+          "provisional_score": 2,
+          "confidence": "M",
+          "basis": "INFERENCE C-T2-C9: native export, DTP, Mastodon, Browsertrix phủ nhiều việc; gap semantics chưa đo."
+        },
+        "theme": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "INFERENCE C-T2-C14: retired Glitch có thể neo revived workflow; export generic chỉ 1, chưa có product/demo."
+        },
+        "ai": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "HYPOTHESIS C-T2-C12: hỗ trợ parser/dependency replaceable, không load-bearing."
+        },
+        "feasibility": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "UNKNOWN C-T2-C11: export/quyền/successor thật chưa trong tay; scope xuyên nền tảng rủi ro."
+        },
+        "demo": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "INFERENCE C-T2-C13: phục hồi app có before/after nhưng chưa có artifact công khai được phép."
+        },
+        "sustainability": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "UNKNOWN C-T2-C11: không tìm thấy payer mới; không coi hosting fees là rescue-tool revenue."
+        }
+      }
+    },
+    {
+      "id": "C-T3",
+      "space": "T3",
+      "title": "Bảo tồn hồ sơ tạp chí biến mất",
+      "verdict": "drop",
+      "narrowed_scope": null,
+      "target_users": [
+        "Editor journal nhỏ/scholar-led",
+        "Thư viện và cơ quan preservation"
+      ],
+      "payer": "DOAJ/PKP có tuyến miễn phí; thư viện/publisher tài trợ hạ tầng; none found cho công cụ mới",
+      "maintainer": "PKP member institutions, CLOCKSS hoặc Portico",
+      "regions_with_direct_evidence": [
+        "NA",
+        "EU",
+        "Asia",
+        "Other"
+      ],
+      "cases": [
+        {
+          "region": "NA",
+          "case": "Archives of Family Medicine được CLOCKSS trigger",
+          "refs": [
+            "R27"
+          ]
+        },
+        {
+          "region": "EU",
+          "case": "Cardiovascular Medicine/EMH được trigger nhưng thiếu nội dung deposit",
+          "refs": [
+            "R28"
+          ]
+        },
+        {
+          "region": "Asia",
+          "case": "Heterocycles Nhật được trigger 2024; Colombo Sri Lanka phòng ngừa",
+          "refs": [
+            "R29",
+            "R23"
+          ]
+        },
+        {
+          "region": "Other",
+          "case": "Nigerian Journal of Surgical Research được trigger",
+          "refs": [
+            "R30"
+          ]
+        }
+      ],
+      "demand_type": "mixed",
+      "consequence_of_inaction": "Bài, metadata hoặc supplement có thể không còn được tìm/đọc; registration preservation không bảo đảm deposit đủ.",
+      "strongest_alternative": "PKP PN + JASPER + CLOCKSS; Portico được kiểm tra danh sách publisher, chưa audit workflow",
+      "strongest_counterevidence": "Các cơ chế miễn phí và restored journals đã tồn tại; journal là hồ sơ nội dung, không tự là dead technology.",
+      "preservation_vs_restoration": "preservation-sufficient",
+      "resurrection_anchor": null,
+      "ai_role": "unnecessary",
+      "legal_risk": "medium",
+      "key_claims": [
+        "C-T3-C1",
+        "C-T3-C5",
+        "C-T3-C8",
+        "C-T3-C9",
+        "C-T3-C14",
+        "C-T3-C15"
+      ],
+      "falsifier": "Đối chiếu manifest một journal có rủi ro với PKP/JASPER/CLOCKSS: nếu đủ thì không còn gap completeness; generic T3 đã trượt theme; chưa thực hiện.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "INFERENCE C-T3-C7: deposit/trigger có hành vi, thiếu nhu cầu mới/usage direct hiện tại."
+        },
+        "international": {
+          "provisional_score": 3,
+          "confidence": "H",
+          "basis": "VERIFIED scoped C-T3-C3–C6: các vùng có ca, legal path và target nhỏ không đồng nhất nên chưa 5."
+        },
+        "innovation": {
+          "provisional_score": 1,
+          "confidence": "M",
+          "basis": "UNKNOWN C-T3-C9: strongest alternatives làm core job; incomplete deposit chưa chứng minh thiếu tool."
+        },
+        "theme": {
+          "provisional_score": 1,
+          "confidence": "H",
+          "basis": "INFERENCE C-T3-C14: không có dead technology cho generic journal preservation."
+        },
+        "ai": {
+          "provisional_score": 1,
+          "confidence": "M",
+          "basis": "HYPOTHESIS C-T3-C12: AI không cần cho core integrity/trigger; OCR chưa gắn nhu cầu."
+        },
+        "feasibility": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "INFERENCE C-T3-C8: conventional preservation khả thi với dữ liệu có phép, chưa có bộ dữ liệu trong tay."
+        },
+        "demo": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "INFERENCE C-T3-C7: giá trị thường là đọc/discovery, khó cho thấy khác biệt so với kho hiện có."
+        },
+        "sustainability": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "INFERENCE C-T3-C11: có tổ chức và funding, chưa có doanh thu mới và quyền từng asset."
+        }
+      }
+    },
+    {
+      "id": "C-T3a",
+      "space": "T3",
+      "title": "Scholarship tương tác dựa Flash đã retired",
+      "verdict": "narrow",
+      "narrowed_scope": "Early Vectors-like works có interactivity thiết yếu; cần chứng minh còn hỏng sau baseline và có quyền/curator",
+      "target_users": [
+        "Editor/curator Vectors-like born-digital scholarship",
+        "Học giả cần truy cập lập luận tương tác"
+      ],
+      "payer": "none found; thư viện/curator funder mới là giả thuyết",
+      "maintainer": "none found cho nhánh mới; cần custodian tác phẩm",
+      "regions_with_direct_evidence": [
+        "NA"
+      ],
+      "cases": [
+        {
+          "region": "NA",
+          "case": "Vectors co-editor mô tả Flash obsolescence; chưa kiểm hiện trạng từng essay",
+          "refs": [
+            "R31",
+            "R32"
+          ]
+        }
+      ],
+      "demand_type": "hypothetical",
+      "consequence_of_inaction": "Tác phẩm có thể giữ media nhưng mất hành vi tương tác làm nên lập luận.",
+      "strongest_alternative": "Ruffle và các kho electronic literature đã phục hồi; chưa audit từng essay",
+      "strongest_counterevidence": "Nhu cầu 2025–2026 và artifact chưa xác nhận; Ruffle có thể đã giải quyết toàn bộ phần cần đọc.",
+      "preservation_vs_restoration": "restoration-adds-value",
+      "resurrection_anchor": "Adobe Flash Player, EOL 31/12/2020 và content blocked 12/1/2021; early Vectors dùng Flash theo co-editor",
+      "ai_role": "unnecessary",
+      "legal_risk": "high",
+      "key_claims": [
+        "C-T3-C13",
+        "C-T3-C14",
+        "C-T3-C15"
+      ],
+      "falsifier": "Một essay được phép dùng: nếu Ruffle đã giữ đủ hành vi cần nghiên cứu hoặc curator không cần phục hồi thì loại; chưa thực hiện.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 1,
+          "confidence": "L",
+          "basis": "UNKNOWN C-T3-C13/C14: mất chức năng lịch sử có nguồn, direct current user behaviour chưa có."
+        },
+        "international": {
+          "provisional_score": 1,
+          "confidence": "M",
+          "basis": "INFERENCE C-T3-C14: chỉ có Vectors NA; không chuyển quốc tế của generic journals sang nhánh này."
+        },
+        "innovation": {
+          "provisional_score": 1,
+          "confidence": "L",
+          "basis": "INFERENCE C-T3-C14: Ruffle làm core resurrection; gap chưa được kiểm tra."
+        },
+        "theme": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "INFERENCE C-T3-C14 với VERIFIED retirement statement C13: runtime retired cụ thể, chưa có demo để đạt 4–5."
+        },
+        "ai": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "HYPOTHESIS C-T3-C12: chủ yếu conventional emulation, AI không cần; depth chưa đo."
+        },
+        "feasibility": {
+          "provisional_score": 1,
+          "confidence": "L",
+          "basis": "UNKNOWN C-T3-C14: site timeout, chưa có artifact/quyền/oracle."
+        },
+        "demo": {
+          "provisional_score": 3,
+          "confidence": "L",
+          "basis": "INFERENCE C-T3-C13: potential before/after tương tác rõ nếu lấy được artifact thật."
+        },
+        "sustainability": {
+          "provisional_score": 1,
+          "confidence": "L",
+          "basis": "UNKNOWN C-T3-C14: chưa có maintainer/payer và license cụ thể."
+        }
+      }
+    },
+    {
+      "id": "C-T4",
+      "space": "T4",
+      "title": "Chuyển giao archive di sản cùng quyền và ngữ cảnh",
+      "verdict": "drop",
+      "narrowed_scope": null,
+      "target_users": [
+        "Community/Tribal archive stewards",
+        "Curator sáng lập sắp rút",
+        "Tổ chức archive nhận bàn giao"
+      ],
+      "payer": "Foundation/đại học/cơ quan văn hóa có funding chương trình; none found cho công cụ mới",
+      "maintainer": "Custodian được cộng đồng thừa nhận; Archive Nepal/BBAW là các ca có người nhận",
+      "regions_with_direct_evidence": [
+        "NA",
+        "EU",
+        "Asia",
+        "Other"
+      ],
+      "cases": [
+        {
+          "region": "Asia",
+          "case": "Digital Himalaya chuyển quản lý cho Archive Nepal 2024",
+          "refs": [
+            "R35",
+            "R36"
+          ]
+        },
+        {
+          "region": "NA",
+          "case": "WiLS hỗ trợ Tribal heritage theo grant; không phải ca shutdown",
+          "refs": [
+            "R40"
+          ]
+        },
+        {
+          "region": "EU",
+          "case": "ELAR London→Berlin, access rules tiếp tục",
+          "refs": [
+            "R37",
+            "R38",
+            "R45"
+          ]
+        },
+        {
+          "region": "Other",
+          "case": "PARADISEC Australia nhận deposit/restrictions; analog stewardship, không chứng minh insolvency",
+          "refs": [
+            "R39"
+          ]
+        }
+      ],
+      "demand_type": "mixed",
+      "consequence_of_inaction": "Nội dung có thể còn bytes nhưng thiếu custodian, quyền truy cập và ngữ cảnh sử dụng phù hợp.",
+      "strongest_alternative": "Mukurtu migration/Roundtrip + hubs; PARADISEC/ELAR; institutional handoff",
+      "strongest_counterevidence": "Mukurtu đã chuyển communities/protocols và site content; Naga Videodisc đã được đưa online, chưa có unmet resurrection job.",
+      "preservation_vs_restoration": "restoration-adds-value",
+      "resurrection_anchor": null,
+      "ai_role": "useful",
+      "legal_risk": "high",
+      "key_claims": [
+        "C-T4-C3",
+        "C-T4-C4",
+        "C-T4-C7",
+        "C-T4-C10",
+        "C-T4-C14",
+        "C-T4-C15"
+      ],
+      "falsifier": "Một migration được cộng đồng cho phép: nếu công cụ chính thức giữ đủ content/access semantics và chỉ thiếu funding/governance thì loại gap tooling; chưa thực hiện.",
+      "rubric_evidence": {
+        "demand": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "INFERENCE C-T4-C6: handoff demonstrated, current demand cho công cụ mới chưa có."
+        },
+        "international": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "VERIFIED scoped C-T4-C3–C5: nhiều vùng nhưng authority và legal/cultural constraints ngăn giả định international 5."
+        },
+        "innovation": {
+          "provisional_score": 1,
+          "confidence": "M",
+          "basis": "INFERENCE C-T4-C7/C8: strongest alternatives đã có rights/context transfer; gap custom chưa kiểm."
+        },
+        "theme": {
+          "provisional_score": 1,
+          "confidence": "H",
+          "basis": "INFERENCE C-T4-C14: generic transfer không có retired tech trung tâm; Naga là ca đã cứu, chưa có bằng chứng nhu cầu phục hồi mới."
+        },
+        "ai": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "HYPOTHESIS C-T4-C12: OCR/transcription phụ trợ, không thay thẩm quyền/quản trị."
+        },
+        "feasibility": {
+          "provisional_score": 1,
+          "confidence": "L",
+          "basis": "UNKNOWN C-T4-C9: cần cộng đồng, permissions, migration ground truth chưa có."
+        },
+        "demo": {
+          "provisional_score": 2,
+          "confidence": "L",
+          "basis": "INFERENCE C-T4-C13: chức năng quyền khó thấy trong demo, chưa có public artifact."
+        },
+        "sustainability": {
+          "provisional_score": 3,
+          "confidence": "M",
+          "basis": "INFERENCE C-T4-C10/C11: funding support có thật nhưng có kỳ hạn, pháp lý từng kho chưa rõ."
+        }
+      }
+    }
+  ]
+}

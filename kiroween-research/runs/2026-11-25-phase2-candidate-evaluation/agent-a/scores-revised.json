@@ -1,0 +1,712 @@
+{
+  "agent": "A",
+  "phase": "2B",
+  "model_observed": "gemini-4-neon-high",
+  "effort_observed": "high",
+  "candidates": {
+    "A-P1": {
+      "scores": {
+        "demand": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "A-P1-C2 (split per corrections-overlay)",
+            "A-P1-C3",
+            "https://github.com/n8n-io/n8n",
+            "https://blog.n8n.io/series-c/",
+            "https://github.com/DIYgod/RSSHub",
+            "https://github.com/RSSNext/Folo",
+            "https://docs.feedly.com/article/863-feedly-pro-support-knowledge-private",
+            "https://www.inoreader.com/pricing"
+          ]
+        },
+        "international": {
+          "score": 4,
+          "confidence": "H",
+          "evidence": [
+            "A-P1-C2 (Reuters DNR 2026 / Pew 2026)",
+            "https://github.com/DIYgod/RSSHub",
+            "https://github.com/RSSNext/Folo",
+            "https://github.com/FreshRSS/FreshRSS",
+            "https://www.inoreader.com/pricing"
+          ]
+        },
+        "innovation": {
+          "score": 2,
+          "confidence": "H",
+          "evidence": [
+            "https://github.com/n8n-io/n8n",
+            "https://blog.n8n.io/series-c/",
+            "https://www.inoreader.com/pricing",
+            "https://docs.feedly.com/article/863-feedly-pro-support-knowledge-private",
+            "https://github.com/DIYgod/RSSHub",
+            "https://github.com/RSSNext/Folo"
+          ]
+        },
+        "theme": {
+          "score": 4,
+          "confidence": "H",
+          "evidence": [
+            "A-P1-C1"
+          ]
+        },
+        "ai": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "A-P1-C4",
+            "https://github.com/DIYgod/RSSHub",
+            "https://docs.feedly.com/article/202-duplicate-articles"
+          ]
+        },
+        "feasibility": {
+          "score": 5,
+          "confidence": "H",
+          "evidence": [
+            "https://github.com/DIYgod/RSSHub",
+            "https://github.com/FreshRSS/FreshRSS"
+          ]
+        },
+        "demo": {
+          "score": 4,
+          "confidence": "H",
+          "evidence": [
+            "A-P1-C1",
+            "https://github.com/n8n-io/n8n"
+          ]
+        },
+        "sustainability": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://docs.feedly.com/article/863-feedly-pro-support-knowledge-private",
+            "https://www.inoreader.com/pricing",
+            "https://github.com/n8n-io/n8n",
+            "https://blog.n8n.io/series-c/",
+            "https://github.com/RSSNext/Folo"
+          ]
+        }
+      },
+      "theme_gate_pass": true,
+      "weighted_total": 70.0,
+      "changes": []
+    },
+    "A-P2": {
+      "scores": {
+        "demand": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "A-P2-C2 (split per corrections-overlay)",
+            "A-P2-C3",
+            "https://blogs.windows.com/windowsexperience/2025/06/24/stay-secure-with-windows-11-copilot-pcs-and-windows-365-before-support-ends-for-windows-10/",
+            "https://blog.google/products-and-platforms/products/gemini/gemini-live-updates-august-2025/"
+          ]
+        },
+        "international": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "A-P2-C2 (SAP-WalkMe)",
+            "https://blogs.windows.com/windowsexperience/2025/06/24/stay-secure-with-windows-11-copilot-pcs-and-windows-365-before-support-ends-for-windows-10/",
+            "https://blog.google/products-and-platforms/products/gemini/gemini-live-updates-august-2025/"
+          ]
+        },
+        "innovation": {
+          "score": 2,
+          "confidence": "H",
+          "evidence": [
+            "https://blogs.windows.com/windowsexperience/2025/06/24/stay-secure-with-windows-11-copilot-pcs-and-windows-365-before-support-ends-for-windows-10/",
+            "https://blog.google/products-and-platforms/products/gemini/gemini-live-updates-august-2025/",
+            "A-P2-C2 (SAP-WalkMe, Apple TipKit)"
+          ]
+        },
+        "theme": {
+          "score": 4,
+          "confidence": "H",
+          "evidence": [
+            "A-P2-C1"
+          ]
+        },
+        "ai": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "A-P2-C4",
+            "https://blogs.windows.com/windowsexperience/2025/06/24/stay-secure-with-windows-11-copilot-pcs-and-windows-365-before-support-ends-for-windows-10/"
+          ]
+        },
+        "feasibility": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "A-P2-C3",
+            "A-P2-C4"
+          ]
+        },
+        "demo": {
+          "score": 4,
+          "confidence": "H",
+          "evidence": [
+            "A-P2-C1"
+          ]
+        },
+        "sustainability": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "A-P2-C2 (SAP-WalkMe)",
+            "https://blogs.windows.com/windowsexperience/2025/06/24/stay-secure-with-windows-11-copilot-pcs-and-windows-365-before-support-ends-for-windows-10/"
+          ]
+        }
+      },
+      "theme_gate_pass": true,
+      "weighted_total": 61.0,
+      "changes": []
+    },
+    "A-P4": {
+      "scores": {
+        "demand": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "A-P4-C1",
+            "A-P4-C2",
+            "A-P4-C3",
+            "https://github.com/karakeep-app/karakeep",
+            "https://github.com/ArchiveBox/ArchiveBox",
+            "https://github.com/wallabag/wallabag",
+            "https://readwise.io/pricing"
+          ]
+        },
+        "international": {
+          "score": 4,
+          "confidence": "H",
+          "evidence": [
+            "A-P4-C1",
+            "A-P4-C2",
+            "https://b.hatena.ne.jp/",
+            "https://github.com/wallabag/wallabag",
+            "https://github.com/karakeep-app/karakeep"
+          ]
+        },
+        "innovation": {
+          "score": 1,
+          "confidence": "H",
+          "evidence": [
+            "https://github.com/karakeep-app/karakeep",
+            "https://github.com/ArchiveBox/ArchiveBox",
+            "https://github.com/gildas-lormeau/SingleFile",
+            "https://obsidian.md/help/web-clipper",
+            "https://readwise.io/pricing",
+            "https://raindrop.io/pro",
+            "A-P4-C3"
+          ]
+        },
+        "theme": {
+          "score": 5,
+          "confidence": "H",
+          "evidence": [
+            "A-P4-C1",
+            "https://blog.pinboard.in/2017/06/pinboard_acquires_delicious/"
+          ]
+        },
+        "ai": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "A-P4-C2",
+            "A-P4-C4"
+          ]
+        },
+        "feasibility": {
+          "score": 5,
+          "confidence": "H",
+          "evidence": [
+            "A-P4-C1",
+            "https://github.com/ArchiveBox/ArchiveBox",
+            "https://github.com/gildas-lormeau/SingleFile"
+          ]
+        },
+        "demo": {
+          "score": 4,
+          "confidence": "H",
+          "evidence": [
+            "A-P4-C1",
+            "A-P4-C2"
+          ]
+        },
+        "sustainability": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://readwise.io/pricing",
+            "https://raindrop.io/pro",
+            "https://github.com/karakeep-app/karakeep",
+            "A-P4-C1"
+          ]
+        }
+      },
+      "theme_gate_pass": true,
+      "weighted_total": 73.0,
+      "changes": [
+        {
+          "criterion": "innovation",
+          "from": 2,
+          "to": 1,
+          "reason": "Direct verification of Obsidian Web Clipper (P2B-R04) and SingleFile (23,007 GitHub stars, AGPL-3.0, P2B-R05) breaks the Phase 1 'SaaS lock-in vs. Docker sysadmin' dilemma: zero-Docker local-first archiving already covers the core job, reducing soft-404/hijack detection to a feature add-on (Anchor 1).",
+          "triggered_by": "C"
+        }
+      ]
+    },
+    "A-P7": {
+      "scores": {
+        "demand": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "A-P7-C1",
+            "A-P7-C2 (30,903 total; n=16,985)",
+            "A-P7-C4",
+            "https://github.com/upstash/context7",
+            "https://survey.stackoverflow.co/2026/ai/data/ai-trust"
+          ]
+        },
+        "international": {
+          "score": 4,
+          "confidence": "H",
+          "evidence": [
+            "A-P7-C1",
+            "A-P7-C2",
+            "https://api.stackexchange.com/2.3/questions?site=ja.stackoverflow&fromdate=1790812800&todate=1793491200&filter=total"
+          ]
+        },
+        "innovation": {
+          "score": 2,
+          "confidence": "H",
+          "evidence": [
+            "https://stackoverflow.blog/2026/09/16/here-s-what-s-new-on-stack-overflow-for-agents",
+            "https://github.com/upstash/context7",
+            "https://stackoverflow.co/internal/pricing/",
+            "https://community.openai.com/t/openai-partners-with-stack-overflow/737889",
+            "A-P7-C3"
+          ]
+        },
+        "theme": {
+          "score": 2,
+          "confidence": "H",
+          "evidence": [
+            "A-P7-C1",
+            "https://stackoverflow.co/internal/pricing/",
+            "https://stackoverflow.blog/2026/09/16/here-s-what-s-new-on-stack-overflow-for-agents",
+            "https://community.openai.com/t/openai-partners-with-stack-overflow/737889"
+          ]
+        },
+        "ai": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "A-P7-C3",
+            "https://github.com/upstash/context7"
+          ]
+        },
+        "feasibility": {
+          "score": 5,
+          "confidence": "H",
+          "evidence": [
+            "https://github.com/upstash/context7"
+          ]
+        },
+        "demo": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "A-P7-C1",
+            "A-P7-C3"
+          ]
+        },
+        "sustainability": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "https://stackoverflow.co/internal/pricing/",
+            "https://community.openai.com/t/openai-partners-with-stack-overflow/737889",
+            "A-P7-C4"
+          ]
+        }
+      },
+      "theme_gate_pass": false,
+      "weighted_total": 58.0,
+      "changes": [
+        {
+          "criterion": "innovation",
+          "from": 3,
+          "to": 2,
+          "reason": "Direct verification of Stack Overflow for Agents (P2B-R01, 2026-09-16) confirms Stack Overflow already ships Questions/TIL/Blueprint/Playbooks to persist agent debug discoveries with privacy controls; only deterministic lockfile + fail-to-pass test-oracle verification remains as a narrow difference.",
+          "triggered_by": "C"
+        }
+      ]
+    },
+    "B-P1": {
+      "scores": {
+        "demand": {
+          "score": 4,
+          "confidence": "H",
+          "evidence": [
+            "https://analytics.home-assistant.io/data.json",
+            "https://www.nabucasa.com/link/",
+            "https://techcrunch.com/2025/07/10/belkin-ends-support-for-most-wemo-devices-and-its-wemo-app/",
+            "https://www.bose.com/soundtouch-end-of-life",
+            "https://support.neatorobotics.com/en/support/home",
+            "B-P1-C1",
+            "B-P1-C4"
+          ]
+        },
+        "international": {
+          "score": 4,
+          "confidence": "H",
+          "evidence": [
+            "https://analytics.home-assistant.io/data.json",
+            "https://support.neatorobotics.com/en/support/home",
+            "https://www.repairscore.eu/blog/eu-right-to-repair-directive-explained",
+            "https://www.law.cornell.edu/uscode/text/17/1201"
+          ]
+        },
+        "innovation": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "B-P1-C5",
+            "https://www.bose.com/soundtouch-end-of-life",
+            "https://github.com/home-assistant/core",
+            "https://github.com/Koenkk/zigbee2mqtt",
+            "https://github.com/pywemo/pywemo"
+          ]
+        },
+        "theme": {
+          "score": 5,
+          "confidence": "H",
+          "evidence": [
+            "B-P1-C1",
+            "B-P1-C2",
+            "B-P1-C4",
+            "https://techcrunch.com/2025/07/10/belkin-ends-support-for-most-wemo-devices-and-its-wemo-app/",
+            "https://www.bose.com/soundtouch-end-of-life",
+            "https://support.neatorobotics.com/en/support/home"
+          ]
+        },
+        "ai": {
+          "score": 4,
+          "confidence": "H",
+          "evidence": [
+            "B-P1-C5",
+            "B-P1-C6"
+          ]
+        },
+        "feasibility": {
+          "score": 2,
+          "confidence": "H",
+          "evidence": [
+            "B-P1-C5",
+            "B-P1-C6",
+            "https://github.com/pywemo/pywemo",
+            "https://www.bose.com/soundtouch-end-of-life"
+          ]
+        },
+        "demo": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "B-P1-C1",
+            "B-P1-C5",
+            "https://techcrunch.com/2025/07/10/belkin-ends-support-for-most-wemo-devices-and-its-wemo-app/"
+          ]
+        },
+        "sustainability": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://www.nabucasa.com/link/",
+            "https://analytics.home-assistant.io/data.json",
+            "https://www.repairscore.eu/blog/eu-right-to-repair-directive-explained",
+            "https://www.law.cornell.edu/uscode/text/17/1201"
+          ]
+        }
+      },
+      "theme_gate_pass": true,
+      "weighted_total": 76.0,
+      "changes": [
+        {
+          "criterion": "innovation",
+          "from": 4,
+          "to": 3,
+          "reason": "Direct re-check of Bose SoundTouch EOL (P2-R19) confirms Bose published official SoundTouch API Documentation for independent developers; combined with Home Assistant/pywemo, self-hostable NoLongerEvil, and the published HotNets '26 pipeline (B·R01), Anchor 3 ('plausible gap, competitors partly cover core job') fits better than 4.",
+          "triggered_by": "B"
+        },
+        {
+          "criterion": "feasibility",
+          "from": 3,
+          "to": 2,
+          "reason": "Two simultaneous material risks remain unmitigated before 4 Dec 2026: no target hardware + legacy app oracle confirmed in hand yet, plus B·R01's unreplicated pipeline consumed billions of model tokens; Anchor 3 allows only one material risk, while 2 distinguishes buyable consumer IoT from B-P4 lab instruments.",
+          "triggered_by": "B"
+        }
+      ]
+    },
+    "B-P4": {
+      "scores": {
+        "demand": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "B-P4-C1 (split per corrections-overlay)",
+            "B-P4-C2 (scoped UW-Madison per corrections-overlay)",
+            "https://learn.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro",
+            "https://support.waters.com/KB_Inf/Empower_Breeze/WKB20510_What_versions_of_Instrument_Control_Software_drivers_are_supported_with_Windows_10",
+            "https://www.metrohm.com/ja_jp/service/quality-service/repair-service/tiamo_service_end.html",
+            "https://www.law.cornell.edu/cfr/text/21/part-11"
+          ]
+        },
+        "international": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "B-P4-C1",
+            "B-P4-C2",
+            "https://www.metrohm.com/ja_jp/service/quality-service/repair-service/tiamo_service_end.html",
+            "https://www.shimadzu.com/an/products/software-informatics/drivers/index.html",
+            "https://support.waters.com/KB_Inf/Empower_Breeze/WKB20510_What_versions_of_Instrument_Control_Software_drivers_are_supported_with_Windows_10",
+            "https://www.law.cornell.edu/cfr/text/21/part-11"
+          ]
+        },
+        "innovation": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://github.com/pymeasure/pymeasure",
+            "https://github.com/microsoft/Qcodes",
+            "https://github.com/ProteoWizard/pwiz",
+            "https://www.metrohm.com/ja_jp/service/quality-service/repair-service/tiamo_service_end.html",
+            "B-P4-C2",
+            "B-P4-C4"
+          ]
+        },
+        "theme": {
+          "score": 4,
+          "confidence": "H",
+          "evidence": [
+            "B-P4-C1",
+            "https://learn.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro"
+          ]
+        },
+        "ai": {
+          "score": 3,
+          "confidence": "L",
+          "evidence": [
+            "B-P4-C4",
+            "B-P1-C5"
+          ]
+        },
+        "feasibility": {
+          "score": 2,
+          "confidence": "L",
+          "evidence": [
+            "B-P4-C4",
+            "https://www.law.cornell.edu/cfr/text/21/part-11"
+          ]
+        },
+        "demo": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "B-P4-C1",
+            "B-P4-C2"
+          ]
+        },
+        "sustainability": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "https://www.law.cornell.edu/cfr/text/21/part-11",
+            "https://github.com/pymeasure/pymeasure",
+            "https://github.com/ProteoWizard/pwiz"
+          ]
+        }
+      },
+      "theme_gate_pass": true,
+      "weighted_total": 60.0,
+      "changes": []
+    },
+    "C-P1": {
+      "scores": {
+        "demand": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "C-P1-C2",
+            "C-P1-C3",
+            "https://docs.feedly.com/article/863-feedly-pro-support-knowledge-private",
+            "https://www.inoreader.com/pricing",
+            "https://github.com/RSSNext/Folo",
+            "https://github.com/FreshRSS/FreshRSS"
+          ]
+        },
+        "international": {
+          "score": 4,
+          "confidence": "H",
+          "evidence": [
+            "C-P1-C2",
+            "https://github.com/RSSNext/Folo",
+            "https://github.com/FreshRSS/FreshRSS",
+            "https://www.inoreader.com/pricing",
+            "https://readwise.io/pricing"
+          ]
+        },
+        "innovation": {
+          "score": 2,
+          "confidence": "H",
+          "evidence": [
+            "https://docs.feedly.com/article/202-duplicate-articles",
+            "https://www.inoreader.com/pricing",
+            "https://github.com/RSSNext/Folo",
+            "C-P1-C5",
+            "C-P1-C7"
+          ]
+        },
+        "theme": {
+          "score": 3,
+          "confidence": "H",
+          "evidence": [
+            "C-P1-C1",
+            "C-P1-C7"
+          ]
+        },
+        "ai": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "C-P1-C2",
+            "C-P1-C5",
+            "C-P1-C6"
+          ]
+        },
+        "feasibility": {
+          "score": 5,
+          "confidence": "H",
+          "evidence": [
+            "https://github.com/FreshRSS/FreshRSS",
+            "C-P1-C6"
+          ]
+        },
+        "demo": {
+          "score": 4,
+          "confidence": "H",
+          "evidence": [
+            "C-P1-C1",
+            "C-P1-C6"
+          ]
+        },
+        "sustainability": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://docs.feedly.com/article/863-feedly-pro-support-knowledge-private",
+            "https://www.inoreader.com/pricing",
+            "https://github.com/RSSNext/Folo"
+          ]
+        }
+      },
+      "theme_gate_pass": true,
+      "weighted_total": 66.0,
+      "changes": []
+    },
+    "C-P4": {
+      "scores": {
+        "demand": {
+          "score": 3,
+          "confidence": "H",
+          "evidence": [
+            "C-P4-C2",
+            "C-P4-C3",
+            "C-P4-C5",
+            "https://www.openreach.com/news/openreach-to-protect-broadband--connections-as-pstn-closure---approaches/",
+            "https://www.tsa-voice.org.uk/news_and_views/latest-news/tsa-news/tsa-formal-statement-urgent-action-on-digital-migration/",
+            "https://www.tunstall.co.uk/services/digital-transition/"
+          ]
+        },
+        "international": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "C-P4-C1",
+            "https://presse.economie.gouv.fr/fermeture-du-reseau-cuivre-le-gouvernement-annonce-plusieurs-dispositifs-pour-accompagner-les-usagers-dans-le-passage-vers-la-fibre-optique/",
+            "https://www.nbnco.com.au/corporate-information/media-centre/media-statements/nbn-co-establishesmedicalalarmsregister"
+          ]
+        },
+        "innovation": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "C-P4-C5",
+            "https://www.openreach.com/news/openreach-to-protect-broadband--connections-as-pstn-closure---approaches/",
+            "https://www.tunstall.co.uk/services/digital-transition/",
+            "https://www.tsa-voice.org.uk/news_and_views/latest-news/tsa-news/tsa-formal-statement-urgent-action-on-digital-migration/"
+          ]
+        },
+        "theme": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "C-P4-C1",
+            "C-P4-C6",
+            "C-P4-C7"
+          ]
+        },
+        "ai": {
+          "score": 2,
+          "confidence": "H",
+          "evidence": [
+            "C-P4-C7"
+          ]
+        },
+        "feasibility": {
+          "score": 2,
+          "confidence": "H",
+          "evidence": [
+            "C-P4-C4",
+            "C-P4-C7",
+            "C-P4-C8"
+          ]
+        },
+        "demo": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "C-P4-C2",
+            "C-P4-C6"
+          ]
+        },
+        "sustainability": {
+          "score": 2,
+          "confidence": "H",
+          "evidence": [
+            "C-P4-C1",
+            "https://www.openreach.com/news/openreach-to-protect-broadband--connections-as-pstn-closure---approaches/",
+            "https://www.tunstall.co.uk/services/digital-transition/",
+            "C-P4-C5"
+          ]
+        }
+      },
+      "theme_gate_pass": false,
+      "weighted_total": 49.0,
+      "changes": [
+        {
+          "criterion": "theme",
+          "from": 3,
+          "to": 2,
+          "reason": "Agent B's strict reading of Anchor 3 Clause 2 ('anchors a revived workflow or capability') resolves my own 2A §4 contradiction: PSTN UK has an official retirement date (31 Jan 2027), but C-P4 is a transition/compliance handover tracker to retire copper safely rather than reviving PSTN or any lost workflow, so it fails the Resurrection gate (theme=2).",
+          "triggered_by": "B"
+        }
+      ]
+    }
+  }
+}

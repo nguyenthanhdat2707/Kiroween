@@ -1,0 +1,582 @@
+{
+  "agent": "C",
+  "phase": "2A",
+  "model_observed": "gpt-6.1-sol",
+  "effort_observed": "high",
+  "candidates": {
+    "A-P1": {
+      "scores": {
+        "demand": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://community.n8n.io/t/cannot-get-any-time-filters-to-work/295902",
+            "https://community.n8n.io/t/problem-filtering-new-rss-items-with-code-node-and-google-sheets-input-multiple-inputs/141143"
+          ]
+        },
+        "international": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://library.concordia.ca/help/using/rss/index.php",
+            "https://urfist.univ-rennes2.fr/sites/default/files/2025-01/Stage%20Veille%20association%20Courroie.pdf",
+            "https://github.com/DIYgod/RSSHub"
+          ]
+        },
+        "innovation": {
+          "score": 1,
+          "confidence": "H",
+          "evidence": [
+            "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.rssfeedread",
+            "https://n8n.io/workflows/1160-merge-data-for-multiple-executions/",
+            "https://www.inoreader.com/blog/2026/01/save-time-with-automations.html",
+            "https://devpost.com/software/ghostpipes-yahoo-pipes-reborn-with-ai-intelligence"
+          ]
+        },
+        "theme": {
+          "score": 5,
+          "confidence": "H",
+          "evidence": [
+            "A-P1-C1",
+            "https://devpost.com/software/ghostpipes-yahoo-pipes-reborn-with-ai-intelligence"
+          ]
+        },
+        "ai": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://www.inoreader.com/blog/2026/01/save-time-with-automations.html",
+            "https://feedly.com/new-features/posts/multilingual_ai_market_intelligence"
+          ]
+        },
+        "feasibility": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.rssfeedread",
+            "https://github.com/DIYgod/RSSHub"
+          ]
+        },
+        "demo": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.rssfeedread",
+            "https://n8n.io/workflows/1160-merge-data-for-multiple-executions/"
+          ]
+        },
+        "sustainability": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://www.inoreader.com/pricing",
+            "https://github.com/DIYgod/RSSHub"
+          ]
+        }
+      },
+      "theme_gate_pass": true,
+      "weighted_total": 65.0
+    },
+    "A-P2": {
+      "scores": {
+        "demand": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://www.itpro.com/business/digital-transformation/how-schneider-electric-is-streamlining-onboarding-with-walkme"
+          ]
+        },
+        "international": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://www.itpro.com/business/digital-transformation/how-schneider-electric-is-streamlining-onboarding-with-walkme",
+            "https://blog.google/products-and-platforms/products/gemini/gemini-app-updates-io-2025/"
+          ]
+        },
+        "innovation": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-vision-microsoft-365-copilot",
+            "https://blog.google/products-and-platforms/products/gemini/gemini-app-updates-io-2025/"
+          ]
+        },
+        "theme": {
+          "score": 5,
+          "confidence": "H",
+          "evidence": [
+            "A-P2-C1",
+            "https://www.chi1995.chistatic.hosting.acm.org/proceedings/shortppr/kjk_bdy.htm"
+          ]
+        },
+        "ai": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-vision-microsoft-365-copilot",
+            "https://www.chi1995.chistatic.hosting.acm.org/proceedings/shortppr/kjk_bdy.htm"
+          ]
+        },
+        "feasibility": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-vision-microsoft-365-copilot",
+            "https://www.chi1995.chistatic.hosting.acm.org/proceedings/shortppr/kjk_bdy.htm"
+          ]
+        },
+        "demo": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://www.chi1995.chistatic.hosting.acm.org/proceedings/shortppr/kjk_bdy.htm"
+          ]
+        },
+        "sustainability": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://www.itpro.com/business/digital-transformation/how-schneider-electric-is-streamlining-onboarding-with-walkme",
+            "https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-vision-microsoft-365-copilot"
+          ]
+        }
+      },
+      "theme_gate_pass": true,
+      "weighted_total": 71.0
+    },
+    "A-P4": {
+      "scores": {
+        "demand": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://labo.hatenastaff.com/entry/2025/05/30/094517",
+            "https://opcug.ca/qa_recordings/20250730_PowerPoint.pdf",
+            "https://support.mozilla.org/en-US/kb/future-of-pocket"
+          ]
+        },
+        "international": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://labo.hatenastaff.com/entry/2025/05/30/094517",
+            "https://opcug.ca/qa_recordings/20250730_PowerPoint.pdf",
+            "https://wallabag.org/migrate-from-pocket/"
+          ]
+        },
+        "innovation": {
+          "score": 1,
+          "confidence": "H",
+          "evidence": [
+            "https://wallabag.it/en/faq/",
+            "https://obsidian.md/help/web-clipper",
+            "https://github.com/gildas-lormeau/SingleFile"
+          ]
+        },
+        "theme": {
+          "score": 4,
+          "confidence": "H",
+          "evidence": [
+            "A-P4-C1",
+            "https://support.mozilla.org/en-US/kb/future-of-pocket"
+          ]
+        },
+        "ai": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://obsidian.md/help/web-clipper",
+            "https://github.com/gildas-lormeau/SingleFile"
+          ]
+        },
+        "feasibility": {
+          "score": 5,
+          "confidence": "M",
+          "evidence": [
+            "https://github.com/gildas-lormeau/SingleFile",
+            "https://wallabag.org/migrate-from-pocket/"
+          ]
+        },
+        "demo": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://github.com/gildas-lormeau/SingleFile",
+            "https://labo.hatenastaff.com/entry/2025/05/30/094517"
+          ]
+        },
+        "sustainability": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://wallabag.it/en/faq/",
+            "https://github.com/gildas-lormeau/SingleFile"
+          ]
+        }
+      },
+      "theme_gate_pass": true,
+      "weighted_total": 71.0
+    },
+    "A-P7": {
+      "scores": {
+        "demand": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://survey.stackoverflow.co/2026/ai/data/ai-trust",
+            "https://survey.stackoverflow.co/2026/knowledge",
+            "https://community.n8n.io/t/problem-filtering-new-rss-items-with-code-node-and-google-sheets-input-multiple-inputs/141143"
+          ]
+        },
+        "international": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://stackoverflow.co/company/press/archive/stack-overflow-annual-developer-survey-ai-trust-conditional",
+            "https://survey.stackoverflow.co/2026/ai/data/ai-trust"
+          ]
+        },
+        "innovation": {
+          "score": 1,
+          "confidence": "H",
+          "evidence": [
+            "https://stackoverflow.blog/2026/09/16/here-s-what-s-new-on-stack-overflow-for-agents",
+            "https://docs.github.com/en/discussions/collaborating-with-your-community-using-discussions/participating-in-a-discussion"
+          ]
+        },
+        "theme": {
+          "score": 2,
+          "confidence": "H",
+          "evidence": [
+            "A-P7-C1",
+            "https://stackoverflow.co/company/press/archive/stack-overflow-annual-developer-survey-ai-trust-conditional",
+            "https://stackoverflow.blog/2026/09/16/here-s-what-s-new-on-stack-overflow-for-agents"
+          ]
+        },
+        "ai": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://community.n8n.io/t/problem-filtering-new-rss-items-with-code-node-and-google-sheets-input-multiple-inputs/141143",
+            "https://docs.github.com/en/code-security/concepts/secret-security/push-protection"
+          ]
+        },
+        "feasibility": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://community.n8n.io/t/problem-filtering-new-rss-items-with-code-node-and-google-sheets-input-multiple-inputs/141143",
+            "https://docs.github.com/en/discussions/collaborating-with-your-community-using-discussions/participating-in-a-discussion"
+          ]
+        },
+        "demo": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://community.n8n.io/t/problem-filtering-new-rss-items-with-code-node-and-google-sheets-input-multiple-inputs/141143",
+            "https://stackoverflow.blog/2026/09/16/here-s-what-s-new-on-stack-overflow-for-agents"
+          ]
+        },
+        "sustainability": {
+          "score": 3,
+          "confidence": "L",
+          "evidence": [
+            "https://stackoverflow.blog/2026/09/16/here-s-what-s-new-on-stack-overflow-for-agents",
+            "https://docs.github.com/en/discussions/collaborating-with-your-community-using-discussions/participating-in-a-discussion"
+          ]
+        }
+      },
+      "theme_gate_pass": false,
+      "weighted_total": 59.0
+    },
+    "B-P1": {
+      "scores": {
+        "demand": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://www.belkin.com/support-article/?articleNum=335419",
+            "https://community.home-assistant.io/t/with-the-end-of-belkin-wemo-support-i-need-help-with-pywemo/980634",
+            "https://github.com/codykociemba/NoLongerEvil-Thermostat"
+          ]
+        },
+        "international": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://support.google.com/googlehome/answer/16233096?hl=en",
+            "https://www.belkin.com/support-article/?articleNum=335419"
+          ]
+        },
+        "innovation": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "https://www.home-assistant.io/integrations/wemo/",
+            "https://github.com/codykociemba/NoLongerEvil-Thermostat",
+            "https://cs.stanford.edu/~jhumphri/documents/you-bought-it-they-bricked-it.pdf"
+          ]
+        },
+        "theme": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://www.belkin.com/support-article/?articleNum=335419",
+            "https://www.macrumors.com/2025/07/10/belkin-ending-wemo-support/"
+          ]
+        },
+        "ai": {
+          "score": 5,
+          "confidence": "M",
+          "evidence": [
+            "https://cs.stanford.edu/~jhumphri/documents/you-bought-it-they-bricked-it.pdf"
+          ]
+        },
+        "feasibility": {
+          "score": 1,
+          "confidence": "L",
+          "evidence": [
+            "https://cs.stanford.edu/~jhumphri/documents/you-bought-it-they-bricked-it.pdf",
+            "https://github.com/codykociemba/NoLongerEvil-Thermostat"
+          ]
+        },
+        "demo": {
+          "score": 3,
+          "confidence": "L",
+          "evidence": [
+            "https://www.home-assistant.io/integrations/wemo/",
+            "https://github.com/codykociemba/NoLongerEvil-Thermostat"
+          ]
+        },
+        "sustainability": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://www.home-assistant.io/integrations/wemo/",
+            "https://github.com/codykociemba/NoLongerEvil-Thermostat"
+          ]
+        }
+      },
+      "theme_gate_pass": true,
+      "weighted_total": 64.0
+    },
+    "B-P4": {
+      "scores": {
+        "demand": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://community.agilent.com/cfs-file/__key/telligent-evolution-components-attachments/01-39-00-00-00-00-05-59/Windows-10-End-of-Life-1.pdf",
+            "https://cit.ucsb.edu/policies",
+            "https://www.metrohm.com/ja_jp/service/quality-service/repair-service/tiamo_service_end.html"
+          ]
+        },
+        "international": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://cit.ucsb.edu/policies",
+            "https://www.metrohm.com/ja_jp/service/quality-service/repair-service/tiamo_service_end.html"
+          ]
+        },
+        "innovation": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://pymeasure.readthedocs.io/en/latest/introduction.html",
+            "https://www.metrohm.com/ja_jp/service/quality-service/repair-service/tiamo_service_end.html",
+            "https://knowledge.illumina.com/instrumentation/general/instrumentation-general-faq-list/000002247"
+          ]
+        },
+        "theme": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://learn.microsoft.com/en-us/lifecycle/products/windows-xp",
+            "B-P4-C1"
+          ]
+        },
+        "ai": {
+          "score": 3,
+          "confidence": "L",
+          "evidence": [
+            "https://cs.stanford.edu/~jhumphri/documents/you-bought-it-they-bricked-it.pdf",
+            "https://pymeasure.readthedocs.io/en/latest/introduction.html"
+          ]
+        },
+        "feasibility": {
+          "score": 1,
+          "confidence": "L",
+          "evidence": [
+            "https://pymeasure.readthedocs.io/en/latest/introduction.html",
+            "https://knowledge.illumina.com/instrumentation/general/instrumentation-general-faq-list/000002247"
+          ]
+        },
+        "demo": {
+          "score": 3,
+          "confidence": "L",
+          "evidence": [
+            "https://pymeasure.readthedocs.io/en/latest/introduction.html"
+          ]
+        },
+        "sustainability": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://contact.perkinelmer.com/upgrade-to-windows11",
+            "https://knowledge.illumina.com/instrumentation/general/instrumentation-general-faq-list/000002247",
+            "https://github.com/pymeasure/pymeasure"
+          ]
+        }
+      },
+      "theme_gate_pass": true,
+      "weighted_total": 56.0
+    },
+    "C-P1": {
+      "scores": {
+        "demand": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://community.n8n.io/t/problem-filtering-new-rss-items-with-code-node-and-google-sheets-input-multiple-inputs/141143",
+            "https://www.inoreader.com/blog/2026/01/save-time-with-automations.html",
+            "https://aclanthology.org/2025.naacl-industry.73.pdf"
+          ]
+        },
+        "international": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://library.concordia.ca/help/using/rss/index.php",
+            "https://urfist.univ-rennes2.fr/sites/default/files/2025-01/Stage%20Veille%20association%20Courroie.pdf",
+            "https://aclanthology.org/2025.naacl-industry.73.pdf"
+          ]
+        },
+        "innovation": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "https://feedly.com/new-features/posts/multilingual_ai_market_intelligence",
+            "https://developers.feedly.com/docs/how-does-deduplication-work",
+            "https://www.inoreader.com/blog/2026/01/save-time-with-automations.html",
+            "https://devpost.com/software/watcher-5kfz4r"
+          ]
+        },
+        "theme": {
+          "score": 4,
+          "confidence": "H",
+          "evidence": [
+            "C-P1-C1"
+          ]
+        },
+        "ai": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://aclanthology.org/2025.naacl-industry.73.pdf",
+            "https://developers.feedly.com/docs/how-does-deduplication-work"
+          ]
+        },
+        "feasibility": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://aclanthology.org/2025.naacl-industry.73.pdf",
+            "https://library.concordia.ca/help/using/rss/index.php"
+          ]
+        },
+        "demo": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://developers.feedly.com/docs/how-does-deduplication-work",
+            "https://aclanthology.org/2025.naacl-industry.73.pdf"
+          ]
+        },
+        "sustainability": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://www.inoreader.com/pricing",
+            "https://feedly.com/new-features/posts/multilingual_ai_market_intelligence"
+          ]
+        }
+      },
+      "theme_gate_pass": true,
+      "weighted_total": 67.0
+    },
+    "C-P4": {
+      "scores": {
+        "demand": {
+          "score": 4,
+          "confidence": "H",
+          "evidence": [
+            "https://www.gov.uk/government/publications/telecare-and-the-digital-switchover-guidance-for-housing-providers/telecare-and-the-digital-switchover-guidance-for-housing-providers",
+            "https://www.ofcom.org.uk/phones-and-broadband/vulnerable-customers/ofcom-fines-virgin-media-23.8-million-for-putting-vulnerable-customers-at-risk-of-harm",
+            "https://modgov.hillingdon.gov.uk/documents/g5055/Printed%20minutes%2018th-Sep-2025%2019.00%20CABINET.pdf?T=1"
+          ]
+        },
+        "international": {
+          "score": 3,
+          "confidence": "L",
+          "evidence": [
+            "https://www.fdma.go.jp/mission/prevention/landline.html",
+            "https://journal.ntt.co.jp/article/36705",
+            "https://www.gov.uk/government/publications/telecare-and-the-digital-switchover-guidance-for-housing-providers/telecare-and-the-digital-switchover-guidance-for-housing-providers"
+          ]
+        },
+        "innovation": {
+          "score": 2,
+          "confidence": "M",
+          "evidence": [
+            "https://www.openreach.com/news/openreach-to-protect-broadband--connections-as-pstn-closure---approaches/",
+            "https://telecare.digitaloffice.scot/news/march-2026-housing-blog-preparing-for-the-january-2027-deadline-318"
+          ]
+        },
+        "theme": {
+          "score": 3,
+          "confidence": "H",
+          "evidence": [
+            "https://www.gov.uk/government/publications/telecare-and-the-digital-switchover-guidance-for-housing-providers/telecare-and-the-digital-switchover-guidance-for-housing-providers",
+            "https://www.openreach.com/news/openreach-to-protect-broadband--connections-as-pstn-closure---approaches/"
+          ]
+        },
+        "ai": {
+          "score": 2,
+          "confidence": "H",
+          "evidence": [
+            "https://www.gov.uk/government/publications/telecare-and-the-digital-switchover-guidance-for-housing-providers/telecare-and-the-digital-switchover-guidance-for-housing-providers",
+            "https://telecare.digitaloffice.scot/news/march-2026-housing-blog-preparing-for-the-january-2027-deadline-318"
+          ]
+        },
+        "feasibility": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://www.gov.uk/government/publications/telecare-and-the-digital-switchover-guidance-for-housing-providers/telecare-and-the-digital-switchover-guidance-for-housing-providers",
+            "https://telecare.digitaloffice.scot/news/march-2026-housing-blog-preparing-for-the-january-2027-deadline-318"
+          ]
+        },
+        "demo": {
+          "score": 3,
+          "confidence": "M",
+          "evidence": [
+            "https://modgov.hillingdon.gov.uk/documents/g5055/Printed%20minutes%2018th-Sep-2025%2019.00%20CABINET.pdf?T=1",
+            "https://telecare.digitaloffice.scot/news/march-2026-housing-blog-preparing-for-the-january-2027-deadline-318"
+          ]
+        },
+        "sustainability": {
+          "score": 4,
+          "confidence": "M",
+          "evidence": [
+            "https://modgov.hillingdon.gov.uk/documents/g5055/Printed%20minutes%2018th-Sep-2025%2019.00%20CABINET.pdf?T=1",
+            "https://www.openreach.com/news/openreach-to-protect-broadband--connections-as-pstn-closure---approaches/"
+          ]
+        }
+      },
+      "theme_gate_pass": true,
+      "weighted_total": 60.0
+    }
+  }
+}

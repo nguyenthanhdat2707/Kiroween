@@ -1,0 +1,626 @@
+{
+ "rows": [
+  [
+   "A·R02",
+   "A-P1-C1",
+   [
+    4,
+    3,
+    4,
+    5,
+    5,
+    5,
+    4
+   ],
+   83,
+   [
+    3,
+    4,
+    4,
+    5,
+    5,
+    4,
+    5
+   ],
+   82,
+   1,
+   "trade press relaying Yahoo announcement"
+  ],
+  [
+   "A·R05",
+   "A-P1-C2",
+   [
+    5,
+    5,
+    4,
+    4,
+    5,
+    5,
+    5
+   ],
+   93,
+   [
+    5,
+    5,
+    3,
+    3,
+    5,
+    4,
+    5
+   ],
+   84,
+   9,
+   "platform-use data; does not measure overload of professional monitors"
+  ],
+  [
+   "A·R06",
+   "A-P1-C2",
+   [
+    5,
+    5,
+    4,
+    4,
+    5,
+    5,
+    5
+   ],
+   93,
+   [
+    5,
+    5,
+    3,
+    3,
+    5,
+    4,
+    5
+   ],
+   84,
+   9,
+   "US adults' news fatigue; fatigue != demand for tools"
+  ],
+  [
+   "A·R12",
+   "A-P2-C2",
+   [
+    5,
+    4,
+    4,
+    4,
+    4,
+    5,
+    2
+   ],
+   84,
+   [
+    5,
+    4,
+    3,
+    3,
+    3,
+    5,
+    3
+   ],
+   76,
+   8,
+   "enterprise deal (2024) used for end-user gap claim"
+  ],
+  [
+   "A·R19",
+   "A-P4-C1",
+   [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    3
+   ],
+   98,
+   [
+    5,
+    4,
+    4,
+    5,
+    5,
+    5,
+    4
+   ],
+   91,
+   7,
+   "Mozilla's own shutdown notice"
+  ],
+  [
+   "A·R21",
+   "A-P4-C2",
+   [
+    5,
+    5,
+    5,
+    5,
+    4,
+    5,
+    5
+   ],
+   98,
+   [
+    5,
+    5,
+    5,
+    4,
+    4,
+    5,
+    5
+   ],
+   95,
+   3,
+   "general web pages, not personal bookmark sets"
+  ],
+  [
+   "A·R22",
+   "A-P4-C3",
+   [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    4
+   ],
+   99,
+   [
+    5,
+    4,
+    4,
+    5,
+    5,
+    4,
+    4
+   ],
+   89,
+   10,
+   "vendor policy page; may change"
+  ],
+  [
+   "A·R39",
+   "A-P7-C1",
+   [
+    3,
+    4,
+    4,
+    5,
+    5,
+    5,
+    3
+   ],
+   82,
+   [
+    2,
+    3,
+    3,
+    5,
+    5,
+    3,
+    3
+   ],
+   66,
+   16,
+   "SEO-agency blog relaying counts"
+  ],
+  [
+   "A·R40",
+   "A-P7-C2",
+   [
+    5,
+    5,
+    4,
+    5,
+    5,
+    5,
+    3
+   ],
+   94,
+   [
+    5,
+    5,
+    3,
+    4,
+    5,
+    4,
+    3
+   ],
+   85,
+   9,
+   "self-reported survey; publisher has a stake"
+  ],
+  [
+   "B·R01",
+   "B-P1-C5",
+   [
+    4,
+    5,
+    4,
+    5,
+    5,
+    3,
+    3
+   ],
+   86,
+   [
+    4,
+    5,
+    4,
+    5,
+    5,
+    3,
+    3
+   ],
+   86,
+   0,
+   "workshop paper; advocacy framing; not reproduced"
+  ],
+  [
+   "B·R02",
+   "B-P1-C1",
+   [
+    3,
+    2,
+    3,
+    5,
+    4,
+    4,
+    4
+   ],
+   67,
+   [
+    3,
+    4,
+    4,
+    5,
+    5,
+    4,
+    5
+   ],
+   82,
+   -15,
+   "relays Spotify's dates verbatim"
+  ],
+  [
+   "B·R03",
+   "B-P1-C2",
+   [
+    3,
+    3,
+    4,
+    5,
+    5,
+    4,
+    4
+   ],
+   77,
+   [
+    3,
+    4,
+    4,
+    5,
+    5,
+    4,
+    5
+   ],
+   82,
+   -5,
+   "news report of App Store change"
+  ],
+  [
+   "B·R04",
+   "B-P1-C4",
+   [
+    3,
+    3,
+    4,
+    4,
+    5,
+    4,
+    4
+   ],
+   74,
+   [
+    3,
+    4,
+    4,
+    5,
+    5,
+    4,
+    5
+   ],
+   82,
+   -8,
+   "news report with Google date"
+  ],
+  [
+   "B·R13",
+   "B-P4-C1",
+   [
+    4,
+    3,
+    4,
+    5,
+    2,
+    4,
+    5
+   ],
+   76,
+   [
+    4,
+    3,
+    4,
+    4,
+    2,
+    4,
+    5
+   ],
+   73,
+   3,
+   "Nature feature 2021; anecdotal; stale for 2026"
+  ],
+  [
+   "B·R14",
+   "B-P4-C2",
+   [
+    4,
+    4,
+    5,
+    5,
+    4,
+    4,
+    5
+   ],
+   88,
+   [
+    5,
+    4,
+    5,
+    5,
+    4,
+    4,
+    5
+   ],
+   92,
+   -4,
+   "institution documenting its own practice"
+  ],
+  [
+   "B·R20",
+   "B-P6-C2",
+   [
+    5,
+    5,
+    4,
+    3,
+    4,
+    5,
+    5
+   ],
+   88,
+   [
+    5,
+    5,
+    5,
+    4,
+    4,
+    5,
+    5
+   ],
+   95,
+   -7,
+   "SAME SOURCE as A·R21"
+  ],
+  [
+   "C·R01",
+   "C-P1-C1",
+   [
+    5,
+    2,
+    3,
+    5,
+    5,
+    5,
+    3
+   ],
+   78,
+   [
+    5,
+    4,
+    3,
+    5,
+    5,
+    5,
+    3
+   ],
+   86,
+   -8,
+   "official notice; stated reasons unevidenced"
+  ],
+  [
+   "C·R04",
+   "C-P1-C5",
+   [
+    5,
+    4,
+    4,
+    5,
+    4,
+    4,
+    2
+   ],
+   85,
+   [
+    5,
+    4,
+    4,
+    5,
+    4,
+    4,
+    3
+   ],
+   86,
+   -1,
+   "vendor doc of own feature limits"
+  ],
+  [
+   "C·R05",
+   "C-P1-C4",
+   [
+    5,
+    3,
+    4,
+    4,
+    4,
+    4,
+    2
+   ],
+   78,
+   [
+    5,
+    3,
+    3,
+    4,
+    4,
+    4,
+    2
+   ],
+   74,
+   4,
+   "marketing feature page"
+  ],
+  [
+   "C·R21",
+   "C-P4-C3",
+   [
+    5,
+    4,
+    4,
+    5,
+    5,
+    4,
+    5
+   ],
+   90,
+   [
+    5,
+    4,
+    4,
+    5,
+    5,
+    5,
+    5
+   ],
+   92,
+   -2,
+   "DHSC guidance with commissioned sample data"
+  ],
+  [
+   "C·R25",
+   "C-P4-C5",
+   [
+    5,
+    3,
+    4,
+    4,
+    5,
+    2,
+    1
+   ],
+   75,
+   [
+    5,
+    3,
+    3,
+    4,
+    4,
+    4,
+    2
+   ],
+   74,
+   1,
+   "provider PR on own pilot"
+  ],
+  [
+   "C·R26",
+   "C-P4-C5",
+   [
+    5,
+    4,
+    5,
+    5,
+    5,
+    4,
+    5
+   ],
+   94,
+   [
+    5,
+    4,
+    4,
+    5,
+    4,
+    5,
+    5
+   ],
+   90,
+   4,
+   "gov action plan Feb 2025"
+  ]
+ ],
+ "summary": {
+  "A": {
+   "n": 9,
+   "mean_offset": 8.0,
+   "median_offset": 9.0,
+   "min": 1,
+   "max": 16,
+   "per_criterion": {
+    "Auth": 0.22,
+    "Tech": 0.22,
+    "Mech": 0.78,
+    "Ctx": 0.56,
+    "Fresh": 0.11,
+    "Repro": 0.78,
+    "Bias": -0.33
+   }
+  },
+  "B": {
+   "n": 7,
+   "mean_offset": -5.1,
+   "median_offset": -5.0,
+   "min": -15,
+   "max": 3,
+   "per_criterion": {
+    "Auth": -0.14,
+    "Tech": -0.57,
+    "Mech": -0.29,
+    "Ctx": -0.14,
+    "Fresh": -0.14,
+    "Repro": 0,
+    "Bias": -0.43
+   }
+  },
+  "C": {
+   "n": 6,
+   "mean_offset": -0.3,
+   "median_offset": 0.0,
+   "min": -8,
+   "max": 4,
+   "per_criterion": {
+    "Auth": 0,
+    "Tech": -0.33,
+    "Mech": 0.5,
+    "Ctx": 0,
+    "Fresh": 0.33,
+    "Repro": -0.67,
+    "Bias": -0.33
+   }
+  }
+ }
+}

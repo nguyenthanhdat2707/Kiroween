@@ -1,0 +1,73 @@
+{
+  "agent": "B",
+  "stage": 1,
+  "model_observed": "claude-sonnet-5-5 (self-reported by runtime system prompt)",
+  "effort_observed": null,
+  "claims": {"VERIFIED": 19, "INFERENCE": 24, "HYPOTHESIS": 2, "UNKNOWN": 1},
+  "references": {"opened_directly": 26, "snippet_only": 19},
+  "seed_references": [
+    {"url": "https://kclpure.kcl.ac.uk/portal/en/publications/managing-100-digital-humanities-projects-digital-scholarship-amp-/", "opened": true, "weighted_score": 82, "verdict": "Strong primary source (full text via DHQ) for 'preservation needs SLAs and archival products planned from the start'; single self-reported lab, 2016-2017 data, not shown to generalise beyond a university-funded lab."},
+    {"url": "https://www.dpconline.org/handbook/organisational-activities/preservation-action", "opened": true, "weighted_score": 68, "verdict": "Sound taxonomy (migration, emulation, computer museums) citing Rosenthal 2015 that legal and image-creation barriers push emulation costs out of reach; mostly dated and gives no cost figures, so low direct relevance to economics."},
+    {"url": "https://kiroween.devpost.com/rules", "opened": true, "weighted_score": 74, "verdict": "Binding: Potential Impact asks 'would someone actually use this?' and the IP/privacy clause restricts the demo to content with clear rights; live page matches the Coordinator snapshot on these clauses."}
+  ],
+  "deliverables": [
+    {
+      "id": "B-M1",
+      "kind": "operating_model",
+      "title": "Donation-funded nonprofit (Internet Archive style)",
+      "key_claims": ["B-C18", "B-C27", "B-C33"],
+      "strongest_counterevidence": "Internet Archive already occupies this niche at 210+ PB and still ran a USD 4.06M deficit in FY2025, so a newcomer competes for the same donations with far less trust.",
+      "closest_existing_alternative": "Internet Archive",
+      "depends_on": ["A: question 6", "C: question 1"]
+    },
+    {
+      "id": "B-M2",
+      "kind": "operating_model",
+      "title": "Community/volunteer-run preservation (ArchiveTeam, Flashpoint, Ruffle style)",
+      "key_claims": ["B-C1", "B-C19", "B-C20", "B-C35"],
+      "strongest_counterevidence": "Communities already self-organise without a new platform (GeoCities Japan, Cohost, Flashpoint), and game content carries rights-holder opposition (ESA).",
+      "closest_existing_alternative": "ArchiveTeam + Flashpoint Archive",
+      "depends_on": ["A: question 6"]
+    },
+    {
+      "id": "B-M3",
+      "kind": "operating_model",
+      "title": "Institutional / consortium / legal-deposit model",
+      "key_claims": ["B-C7", "B-C8", "B-C12", "B-C13", "B-C28"],
+      "strongest_counterevidence": "Public funding is politically fragile (Trove near-closure 2023, FlyBase 2025) and single incidents can take an archive offline for years (British Library 2023); a hackathon product cannot become an institution.",
+      "closest_existing_alternative": "National library web archives (NLA Trove, UK Web Archive, NDL WARP) and King's Digital Lab SLAs",
+      "depends_on": ["C: question 4", "A: question 8"]
+    },
+    {
+      "id": "B-M4",
+      "kind": "operating_model",
+      "title": "Freemium / SaaS capture service",
+      "key_claims": ["B-C11", "B-C22", "B-C23", "B-C24", "B-C34"],
+      "strongest_counterevidence": "Rhizome's hosted Conifer service was wound down in 2025-2026, and the paying side of this market is capture (institutions, lawyers), not explorers.",
+      "closest_existing_alternative": "Archive-It, Browsertrix, Perma.cc",
+      "depends_on": ["C: question 1"]
+    },
+    {
+      "id": "B-M5",
+      "kind": "operating_model",
+      "title": "Bring-your-own-storage: platform keeps index + client-side player only (hybrid with M3 deposit)",
+      "key_claims": ["B-C11", "B-C30", "B-C31", "B-C36", "B-C45"],
+      "strongest_counterevidence": "It shifts storage risk onto contributors, the party least able to sustain it, so link rot returns unless originals are also deposited with an institution; no working example of the M5+M3 hybrid was found.",
+      "closest_existing_alternative": "Conifer 'download WACZ, self-host with redirect' option; ReplayWeb.page; Arweave/ArDrive",
+      "depends_on": ["C: question 2", "C: question 4", "A: question 1"]
+    }
+  ],
+  "failures": [
+    "perma.cc returned 403; pricing kept at snippet level",
+    "opencollective.com (Flashpoint) returned 403",
+    "chinadigitaltimes.net returned 403; He Jiayan claim kept at snippet level",
+    "softwareheritage.org and SWH brochure PDF could not be fetched or parsed; SWH funding at snippet level",
+    "trove.nla.gov.au returned 418 and minister.infrastructure.gov.au timed out; Trove claims at snippet level",
+    "UK Web Archive current status found only in snippets",
+    "Palabra Clave article page opened but content not extractable",
+    "No explorer-side visitor data found for curated digital-heritage exhibitions (Rhizome)",
+    "No African case of a digital heritage archive closing for lack of funds found",
+    "No Vietnamese national web-archiving programme found",
+    "Effort level not observable from inside the session"
+  ]
+}

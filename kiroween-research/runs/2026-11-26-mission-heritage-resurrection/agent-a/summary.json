@@ -1,0 +1,65 @@
+{
+  "agent": "A",
+  "stage": 1,
+  "model_observed": "Gemini 4 Neon (Medium)",
+  "effort_observed": "Medium",
+  "claims": {
+    "VERIFIED": 14,
+    "INFERENCE": 4,
+    "HYPOTHESIS": 0,
+    "UNKNOWN": 0
+  },
+  "references": {
+    "opened_directly": 29,
+    "snippet_only": 6
+  },
+  "seed_references": [
+    {
+      "url": "https://www.dpconline.org/handbook/organisational-activities/preservation-action",
+      "opened": true,
+      "weighted_score": 93.0,
+      "verdict": "Authoritative, well-structured preservation guidance confirming that emulation preserves interactive behavior but faces severe legal and system-imaging barriers, and that format obsolescence is often less critical than institutional obsolescence."
+    },
+    {
+      "url": "https://kclpure.kcl.ac.uk/portal/en/publications/managing-100-digital-humanities-projects-digital-scholarship-amp-/",
+      "opened": true,
+      "weighted_score": 93.0,
+      "verdict": "Peer-reviewed empirical benchmark (full text also opened on DHQ at https://digitalhumanities.org/dhq/vol/13/1/000411/000411.html) proving that human appraisal and lifecycle management—not static storage—drive preservation cost, and that tiered decommissioning (46% SLA, 39% archived/static, 15% migrated) is required."
+    }
+  ],
+  "deliverables": [
+    {
+      "id": "A-E1",
+      "kind": "experience",
+      "title": "Interactive Web Evolution Diff & Timeline Explorer",
+      "key_claims": ["A-C12", "A-C14", "A-C15", "A-C16"],
+      "strongest_counterevidence": "Web archive user studies indicate most users perform targeted navigational/link-rot lookups rather than open-ended museum browsing, and curating accurate interactive comparisons is labor-intensive.",
+      "closest_existing_alternative": "Wayback Machine Changes + Web Design Museum + Oldweb.today",
+      "depends_on": ["B: question 1", "B: question 3", "C: question 6", "C: question 8"]
+    },
+    {
+      "id": "A-E2",
+      "kind": "experience",
+      "title": "Retired-Runtime Scholarly & Educational Reading Room",
+      "key_claims": ["A-C8", "A-C11", "A-C13", "A-C16", "A-C17"],
+      "strongest_counterevidence": "Target demand is a narrow academic niche, Ruffle/CheerpJ already cover many single-file artifacts, and complex works still require substantial archivist configuration effort as shown in EaaSI Case Study #1.",
+      "closest_existing_alternative": "EaaSI (Software Preservation Network), Internet Archive Emularity/Ruffle, Flashpoint Archive",
+      "depends_on": ["B: question 2", "B: question 4", "C: question 7", "C: question 8", "C: question 9"]
+    },
+    {
+      "id": "A-E3",
+      "kind": "experience",
+      "title": "Provenance-Layered Digital Time Capsule & Community Exhibition",
+      "key_claims": ["A-C2", "A-C4", "A-C9", "A-C14", "A-C18"],
+      "strongest_counterevidence": "High legal/ethical risk (privacy, GDPR right to be forgotten, community consent), weak Kiroween Resurrection theme anchor unless tied to a retired technology, and Conifer's June 2026 shutdown shows hosted community preservation struggles to sustain itself.",
+      "closest_existing_alternative": "Mukurtu CMS, Arquivo.pt Online Exhibitions, Internet Archive Collections",
+      "depends_on": ["B: question 1", "B: question 3", "B: question 5", "C: question 9", "C: question 10"]
+    }
+  ],
+  "failures": [
+    "http://www.digitalhumanities.org/dhq/vol/13/1/000411/000411.html returned HTTP 404 (resolved via HTTPS URL https://digitalhumanities.org/dhq/vol/13/1/000411/000411.html, HTTP 200).",
+    "https://rhizome.org/art/artbase/, https://whc.unesco.org/en/conventiontext/, and https://www.webarchive.org.uk/ returned HTTP 403 Forbidden.",
+    "https://www.bbc.com/news/world-asia-56710912 timed out during SSL handshake.",
+    "https://oldweb.today/ returned HTTP 200 with 0 lines of static text (client-side SPA only)."
+  ]
+}

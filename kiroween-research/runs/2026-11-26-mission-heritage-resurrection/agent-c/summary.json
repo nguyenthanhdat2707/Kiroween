@@ -1,0 +1,114 @@
+{
+  "agent": "C",
+  "stage": 1,
+  "model_observed": "gpt-6.1-sol",
+  "effort_observed": "high",
+  "claims": {
+    "VERIFIED": 23,
+    "INFERENCE": 16,
+    "HYPOTHESIS": 10,
+    "UNKNOWN": 3
+  },
+  "references": {
+    "opened_directly": 41,
+    "snippet_only": 0
+  },
+  "seed_references": [
+    {
+      "url": "https://specs.webrecorder.net/wacz/latest/",
+      "opened": true,
+      "weighted_score": 95.0,
+      "verdict": "Đã mở bản 1.1.1, đối chiếu LoC và Scoop; đủ baseline portable replay, không bảo đảm capture/backend closure."
+    },
+    {
+      "url": "https://www.softwareheritage.org/",
+      "opened": false,
+      "weighted_score": 0,
+      "verdict": "Seed lỗi truy cập nên chưa đánh giá nội dung; SWHAP/paper xác định source-only scope nhưng không thay kiểm tra hiện trạng seed."
+    },
+    {
+      "url": "https://www.dpconline.org/handbook/organisational-activities/preservation-action",
+      "opened": true,
+      "weighted_score": 85.0,
+      "verdict": "Hữu ích cho migration/emulation và loss accounting; tài liệu khái quát, không đủ làm giá hoặc security deployment hiện hành."
+    }
+  ],
+  "deliverables": [
+    {
+      "id": "C-X1",
+      "kind": "architecture",
+      "title": "Catalogue liên kết + WACZ replay phía client",
+      "key_claims": [
+        "C-C4",
+        "C-C5",
+        "C-C10",
+        "C-C27",
+        "C-C31",
+        "C-C33"
+      ],
+      "strongest_counterevidence": "ReplayWeb.page và Browsertrix đã có core replay/QA; archive thiếu response/backend hoặc dedupe dependencies sẽ không tự đủ dù hashes đúng.",
+      "closest_existing_alternative": "ReplayWeb.page + Browsertrix collections / WACZ + Scoop",
+      "depends_on": [
+        "A: question 1",
+        "A: question 2",
+        "B: question 3",
+        "B: question 5"
+      ]
+    },
+    {
+      "id": "C-X2",
+      "kind": "architecture",
+      "title": "Gói bàn giao chức năng source/data và runtime phía client",
+      "key_claims": [
+        "C-C7",
+        "C-C12",
+        "C-C13",
+        "C-C14",
+        "C-C16",
+        "C-C28",
+        "C-C31"
+      ],
+      "strongest_counterevidence": "Endings/Ruffle/CheerpJ đã xử lý nhiều phần; không có input closure thì không phục hồi backend, và conversion có thể thay đổi nghĩa hoặc cần licence để tự host runtime.",
+      "closest_existing_alternative": "Endings + Ruffle; PhET/CheerpJ cho Java như baseline có điều kiện",
+      "depends_on": [
+        "A: question 1",
+        "A: question 2",
+        "B: question 4"
+      ]
+    },
+    {
+      "id": "C-X3",
+      "kind": "architecture",
+      "title": "Hybrid preview + Linux runtime cách ly theo session",
+      "key_claims": [
+        "C-C15",
+        "C-C16",
+        "C-C29",
+        "C-C31",
+        "C-C37",
+        "C-C45",
+        "C-C48",
+        "C-C49"
+      ],
+      "strongest_counterevidence": "Binder/EaaSI đã có on-demand execution; runtime packaging, licences, security và gateway operations còn nguyên, và shared hosting có thể làm phần tiết kiệm thấp hơn nhiều.",
+      "closest_existing_alternative": "BinderHub / EaaSI, OCI images và managed isolated tasks",
+      "depends_on": [
+        "A: question 1",
+        "B: question 4",
+        "B: question 5",
+        "A: question 6",
+        "B: question 6"
+      ]
+    }
+  ],
+  "failures": [
+    "Seed https://www.softwareheritage.org/ không mở được: web timeout/502 và requests/curl TLS certificate verification failure; không bypass TLS, seed opened=false, score=0 (unassessed).",
+    "Software Heritage FAQ cũng TLS/timeout; docs.softwareheritage.org/devel/getting-started/ trả Anubis Access Denied; dùng SWHAP official repository và paper, không coi hai nguồn cùng tác giả là independent confirmation.",
+    "LoC https://www.loc.gov/programs/web-archiving/for-researchers/ HTTP 403; không dùng search snippet làm verified evidence và không tính trong reference count.",
+    "URL PhET /running-sims/legacy-simulations 404; URL /running-sims mở và đọc được.",
+    "EaaSI gitlab.io guide/architecture chuyển login/403; hai URL readthedocs guide/architecture và overview/architecture 404; FAQ v2021-10 mở được nhưng không chứng minh deployment/security hiện tại.",
+    "WACZ latest trả HTML redirect; đã mở trực tiếp 1.1.1. OCI specs website chỉ vỏ trang; thay bằng official v1.1.1 source spec. repo2docker usage trả redirect/vỏ trang, dùng Binder documentation cho baseline, không coi là đã đọc repo2docker docs.",
+    "Không đo capture/compression/dedupe, browser memory, boot latency, capture QA time hay runtime compatibility theo giới hạn Stage 1; chi phí là kịch bản, cold retrieval full tariff và gateway budget chưa được kiểm bằng deployment.",
+    "Không quan sát được request-level backend model, cached/uncached token usage hay chi phí session; chỉ model/effort flags của tiến trình được quan sát."
+  ]
+}
